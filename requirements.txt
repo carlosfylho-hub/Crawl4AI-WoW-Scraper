@@ -9,7 +9,7 @@
 
 # Núcleo de scraping (pin exato: 0.8.6 trouxe breaking changes de assinatura
 # em JsonCssExtractionStrategy — exige `schema` posicional)
-crawl4ai==0.8.6
+crawl4ai==0.9.0
 
 # Navegador headless — deve casar com o Chromium esperado pelo crawl4ai 0.8.6
 playwright==1.58.0
