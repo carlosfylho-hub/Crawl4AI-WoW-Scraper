@@ -1,0 +1,936 @@
+{
+  "_meta": {
+    "documento": "enchant_ids_s2.json",
+    "papel": "Traduz o campo enchant_id do export do SimC para o encantamento do catálogo.",
+    "por_que": "O SimC exporta o ID da linha de SpellItemEnchantment (uma por qualidade), não o ID do pergaminho. Sem este mapa o motor não identifica o encantamento da arma.",
+    "fonte": "https://wago.tools/db2/SpellItemEnchantment/csv",
+    "gerado_em": "2026-11-05T22:13:12.398Z",
+    "script": "tools/mapear_enchant_ids.js",
+    "total_mapeado": 97
+  },
+  "enchants": {
+    "7956": {
+      "nome_en": "Enchant Chest - Mark of Nalorakk",
+      "nome_db2": "Enchant Chest - Mark of Nalorakk",
+      "nome_pt": "Encantamento da Marca de Nalorakk - Torso",
+      "item_id": 243947,
+      "tier": 1,
+      "spell_id": 4,
+      "tipo_efeito": 5
+    },
+    "7957": {
+      "nome_en": "Enchant Chest - Mark of Nalorakk",
+      "nome_db2": "Enchant Chest - Mark of Nalorakk",
+      "nome_pt": "Encantamento da Marca de Nalorakk - Torso",
+      "item_id": 243947,
+      "tier": 2,
+      "spell_id": 4,
+      "tipo_efeito": 5
+    },
+    "7958": {
+      "nome_en": "Enchant Helm - Hex of Leeching",
+      "nome_db2": "Enchant Helm - Hex of Leeching",
+      "nome_pt": "Encantamento de Bagata Sorvedora - Elmo",
+      "item_id": 243949,
+      "tier": 1,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7959": {
+      "nome_en": "Enchant Helm - Hex of Leeching",
+      "nome_db2": "Enchant Helm - Hex of Leeching",
+      "nome_pt": "Encantamento de Bagata Sorvedora - Elmo",
+      "item_id": 243949,
+      "tier": 2,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7960": {
+      "nome_en": "Enchant Helm - Empowered Hex of Leeching",
+      "nome_db2": "Enchant Helm - Empowered Hex of Leeching",
+      "nome_pt": "Encantamento de Bagata Sorvedora Potencializada - Elmo",
+      "item_id": 243951,
+      "tier": 1,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7961": {
+      "nome_en": "Enchant Helm - Empowered Hex of Leeching",
+      "nome_db2": "Enchant Helm - Empowered Hex of Leeching",
+      "nome_pt": "Encantamento de Bagata Sorvedora Potencializada - Elmo",
+      "item_id": 243951,
+      "tier": 2,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7962": {
+      "nome_en": "Enchant Boots - Lynx's Dexterity",
+      "nome_db2": "Enchant Boots - Lynx's Dexterity",
+      "nome_pt": "Encantamento de Destreza do Lince - Botas",
+      "item_id": 243953,
+      "tier": 1,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "7963": {
+      "nome_en": "Enchant Boots - Lynx's Dexterity",
+      "nome_db2": "Enchant Boots - Lynx's Dexterity",
+      "nome_pt": "Encantamento de Destreza do Lince - Botas",
+      "item_id": 243953,
+      "tier": 2,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "7964": {
+      "nome_en": "Enchant Ring - Amani Mastery",
+      "nome_db2": "Enchant Ring - Amani Mastery",
+      "nome_pt": "Encantamento de Maestria Amani - Anel",
+      "item_id": 243955,
+      "tier": 1,
+      "spell_id": 49,
+      "tipo_efeito": 5
+    },
+    "7965": {
+      "nome_en": "Enchant Ring - Amani Mastery",
+      "nome_db2": "Enchant Ring - Amani Mastery",
+      "nome_pt": "Encantamento de Maestria Amani - Anel",
+      "item_id": 243955,
+      "tier": 2,
+      "spell_id": 49,
+      "tipo_efeito": 5
+    },
+    "7966": {
+      "nome_en": "Enchant Ring - Eyes of the Eagle",
+      "nome_db2": "Enchant Ring - Eyes of the Eagle",
+      "nome_pt": "Encantamento de Olhos da Águia - Anel",
+      "item_id": 243957,
+      "tier": 1,
+      "spell_id": 1236700,
+      "tipo_efeito": 3
+    },
+    "7967": {
+      "nome_en": "Enchant Ring - Eyes of the Eagle",
+      "nome_db2": "Enchant Ring - Eyes of the Eagle",
+      "nome_pt": "Encantamento de Olhos da Águia - Anel",
+      "item_id": 243957,
+      "tier": 2,
+      "spell_id": 1236701,
+      "tipo_efeito": 3
+    },
+    "7968": {
+      "nome_en": "Enchant Ring - Zul'jin's Mastery",
+      "nome_db2": "Enchant Ring - Zul'jin's Mastery",
+      "nome_pt": "Encantamento de Maestria de Zul'jin - Anel",
+      "item_id": 243959,
+      "tier": 1,
+      "spell_id": 49,
+      "tipo_efeito": 5
+    },
+    "7969": {
+      "nome_en": "Enchant Ring - Zul'jin's Mastery",
+      "nome_db2": "Enchant Ring - Zul'jin's Mastery",
+      "nome_pt": "Encantamento de Maestria de Zul'jin - Anel",
+      "item_id": 243959,
+      "tier": 2,
+      "spell_id": 49,
+      "tipo_efeito": 5
+    },
+    "7970": {
+      "nome_en": "Enchant Shoulders - Flight of the Eagle",
+      "nome_db2": "Enchant Shoulders - Flight of the Eagle",
+      "nome_pt": "Encantamento do Voo da Águia - Ombros",
+      "item_id": 243961,
+      "tier": 1,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7971": {
+      "nome_en": "Enchant Shoulders - Flight of the Eagle",
+      "nome_db2": "Enchant Shoulders - Flight of the Eagle",
+      "nome_pt": "Encantamento do Voo da Águia - Ombros",
+      "item_id": 243961,
+      "tier": 2,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7972": {
+      "nome_en": "Enchant Shoulders - Akil'zon's Swiftness",
+      "nome_db2": "Enchant Shoulders - Akil'zon's Swiftness",
+      "nome_pt": "Encantamento da Rapidez de Akil'zon - Ombros",
+      "item_id": 243963,
+      "tier": 1,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7973": {
+      "nome_en": "Enchant Shoulders - Akil'zon's Swiftness",
+      "nome_db2": "Enchant Shoulders - Akil'zon's Swiftness",
+      "nome_pt": "Encantamento da Rapidez de Akil'zon - Ombros",
+      "item_id": 243963,
+      "tier": 2,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7974": {
+      "nome_en": "Enchant Tool - Amani Perception",
+      "nome_pt": "Encantamento de Percepção Amani - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243964,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "7975": {
+      "nome_en": "Enchant Tool - Amani Perception",
+      "nome_pt": "Encantamento de Percepção Amani - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243964,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "7976": {
+      "nome_en": "Enchant Tool - Amani Resourcefulness",
+      "nome_pt": "Encantamento de Desenvoltura Amani - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243966,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "7977": {
+      "nome_en": "Enchant Tool - Amani Resourcefulness",
+      "nome_pt": "Encantamento de Desenvoltura Amani - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243966,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "7978": {
+      "nome_en": "Enchant Weapon - Strength of Halazzi",
+      "nome_db2": "Enchant Weapon - Strength of Halazzi",
+      "nome_pt": "Encantamento de Força de Halazzi - Arma",
+      "item_id": 243969,
+      "tier": 1,
+      "spell_id": 1236733,
+      "tipo_efeito": 3
+    },
+    "7979": {
+      "nome_en": "Enchant Weapon - Strength of Halazzi",
+      "nome_db2": "Enchant Weapon - Strength of Halazzi",
+      "nome_pt": "Encantamento de Força de Halazzi - Arma",
+      "item_id": 243969,
+      "tier": 2,
+      "spell_id": 1236734,
+      "tipo_efeito": 3
+    },
+    "7980": {
+      "nome_en": "Enchant Weapon - Jan'alai's Precision",
+      "nome_db2": "Enchant Weapon - Jan'alai's Precision",
+      "nome_pt": "Encantamento de Precisão de Jan'alai - Arma",
+      "item_id": 243971,
+      "tier": 1,
+      "spell_id": 1236724,
+      "tipo_efeito": 3
+    },
+    "7981": {
+      "nome_en": "Enchant Weapon - Jan'alai's Precision",
+      "nome_db2": "Enchant Weapon - Jan'alai's Precision",
+      "nome_pt": "Encantamento de Precisão de Jan'alai - Arma",
+      "item_id": 243971,
+      "tier": 2,
+      "spell_id": 1236725,
+      "tipo_efeito": 3
+    },
+    "7982": {
+      "nome_en": "Enchant Weapon - Berserker's Rage",
+      "nome_db2": "Enchant Weapon - Berserker's Rage",
+      "nome_pt": "Encantamento de Raiva Incontrolada - Arma",
+      "item_id": 243973,
+      "tier": 1,
+      "spell_id": 1236727,
+      "tipo_efeito": 3
+    },
+    "7983": {
+      "nome_en": "Enchant Weapon - Berserker's Rage",
+      "nome_db2": "Enchant Weapon - Berserker's Rage",
+      "nome_pt": "Encantamento de Raiva Incontrolada - Arma",
+      "item_id": 243973,
+      "tier": 2,
+      "spell_id": 1236728,
+      "tipo_efeito": 3
+    },
+    "7984": {
+      "nome_en": "Enchant Chest - Mark of the Rootwarden",
+      "nome_db2": "Enchant Chest - Mark of the Rootwarden",
+      "nome_pt": "Encantamento da Marca do Guardirraiz - Torso",
+      "item_id": 243975,
+      "tier": 1,
+      "spell_id": 3,
+      "tipo_efeito": 5
+    },
+    "7985": {
+      "nome_en": "Enchant Chest - Mark of the Rootwarden",
+      "nome_db2": "Enchant Chest - Mark of the Rootwarden",
+      "nome_pt": "Encantamento da Marca do Guardirraiz - Torso",
+      "item_id": 243975,
+      "tier": 2,
+      "spell_id": 3,
+      "tipo_efeito": 5
+    },
+    "7986": {
+      "nome_en": "Enchant Chest - Mark of the Worldsoul",
+      "nome_db2": "Enchant Chest - Mark of the Worldsoul",
+      "nome_pt": "Encantamento da Marca da Alma do Mundo - Torso",
+      "item_id": 243977,
+      "tier": 1,
+      "spell_id": 71,
+      "tipo_efeito": 5
+    },
+    "7987": {
+      "nome_en": "Enchant Chest - Mark of the Worldsoul",
+      "nome_db2": "Enchant Chest - Mark of the Worldsoul",
+      "nome_pt": "Encantamento da Marca da Alma do Mundo - Torso",
+      "item_id": 243977,
+      "tier": 2,
+      "spell_id": 71,
+      "tipo_efeito": 5
+    },
+    "7988": {
+      "nome_en": "Enchant Helm - Blessing of Speed",
+      "nome_db2": "Enchant Helm - Blessing of Speed",
+      "nome_pt": "Encantamento da Bênção da Velocidade - Elmo",
+      "item_id": 243979,
+      "tier": 1,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7989": {
+      "nome_en": "Enchant Helm - Blessing of Speed",
+      "nome_db2": "Enchant Helm - Blessing of Speed",
+      "nome_pt": "Encantamento da Bênção da Velocidade - Elmo",
+      "item_id": 243979,
+      "tier": 2,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7990": {
+      "nome_en": "Enchant Helm - Empowered Blessing of Speed",
+      "nome_db2": "Enchant Helm - Empowered Blessing of Speed",
+      "nome_pt": "Encantamento da Bênção da Velocidade Potencializada - Elmo",
+      "item_id": 243981,
+      "tier": 1,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7991": {
+      "nome_en": "Enchant Helm - Empowered Blessing of Speed",
+      "nome_db2": "Enchant Helm - Empowered Blessing of Speed",
+      "nome_pt": "Encantamento da Bênção da Velocidade Potencializada - Elmo",
+      "item_id": 243981,
+      "tier": 2,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "7992": {
+      "nome_en": "Enchant Boots - Shaladrassil's Roots",
+      "nome_db2": "Enchant Boots - Shaladrassil's Roots",
+      "nome_pt": "Encantamento das Raízes de Shaladrassil - Botas",
+      "item_id": 243983,
+      "tier": 1,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7993": {
+      "nome_en": "Enchant Boots - Shaladrassil's Roots",
+      "nome_db2": "Enchant Boots - Shaladrassil's Roots",
+      "nome_pt": "Encantamento das Raízes de Shaladrassil - Botas",
+      "item_id": 243983,
+      "tier": 2,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "7994": {
+      "nome_en": "Enchant Ring - Nature's Wrath",
+      "nome_db2": "Enchant Ring - Nature's Wrath",
+      "nome_pt": "Encantamento da Cólera da Natureza - Anel",
+      "item_id": 243985,
+      "tier": 1,
+      "spell_id": 32,
+      "tipo_efeito": 5
+    },
+    "7995": {
+      "nome_en": "Enchant Ring - Nature's Wrath",
+      "nome_db2": "Enchant Ring - Nature's Wrath",
+      "nome_pt": "Encantamento da Cólera da Natureza - Anel",
+      "item_id": 243985,
+      "tier": 2,
+      "spell_id": 32,
+      "tipo_efeito": 5
+    },
+    "7996": {
+      "nome_en": "Enchant Ring - Nature's Fury",
+      "nome_db2": "Enchant Ring - Nature's Fury",
+      "nome_pt": "Encantamento da Fúria da Natureza - Anel",
+      "item_id": 243987,
+      "tier": 1,
+      "spell_id": 32,
+      "tipo_efeito": 5
+    },
+    "7997": {
+      "nome_en": "Enchant Ring - Nature's Fury",
+      "nome_db2": "Enchant Ring - Nature's Fury",
+      "nome_pt": "Encantamento da Fúria da Natureza - Anel",
+      "item_id": 243987,
+      "tier": 2,
+      "spell_id": 32,
+      "tipo_efeito": 5
+    },
+    "7998": {
+      "nome_en": "Enchant Shoulders - Nature's Grace",
+      "nome_db2": "Enchant Shoulders - Nature's Grace",
+      "nome_pt": "Encantamento da Graça da Natureza - Ombros",
+      "item_id": 243989,
+      "tier": 1,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "7999": {
+      "nome_en": "Enchant Shoulders - Nature's Grace",
+      "nome_db2": "Enchant Shoulders - Nature's Grace",
+      "nome_pt": "Encantamento da Graça da Natureza - Ombros",
+      "item_id": 243989,
+      "tier": 2,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8000": {
+      "nome_en": "Enchant Shoulders - Amirdrassil's Grace",
+      "nome_db2": "Enchant Shoulders - Amirdrassil's Grace",
+      "nome_pt": "Encantamento da Graça de Amirdrassil - Ombros",
+      "item_id": 243991,
+      "tier": 1,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8001": {
+      "nome_en": "Enchant Shoulders - Amirdrassil's Grace",
+      "nome_db2": "Enchant Shoulders - Amirdrassil's Grace",
+      "nome_pt": "Encantamento da Graça de Amirdrassil - Ombros",
+      "item_id": 243991,
+      "tier": 2,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8002": {
+      "nome_en": "Enchant Tool - Haranir Finesse",
+      "nome_pt": "Encantamento de Finesse Haranir - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243992,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8003": {
+      "nome_en": "Enchant Tool - Haranir Finesse",
+      "nome_pt": "Encantamento de Finesse Haranir - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243992,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8004": {
+      "nome_en": "Enchant Tool - Haranir Multicrafting",
+      "nome_pt": "Encantamento de Multicriação Haranir - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243994,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8005": {
+      "nome_en": "Enchant Tool - Haranir Multicrafting",
+      "nome_pt": "Encantamento de Multicriação Haranir - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243994,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8006": {
+      "nome_en": "Enchant Weapon - Worldsoul Cradle",
+      "nome_db2": "Enchant Weapon - Worldsoul Cradle",
+      "nome_pt": "Encantamento de Berço da Alma do Mundo - Arma",
+      "item_id": 243997,
+      "tier": 1,
+      "spell_id": 1236735,
+      "tipo_efeito": 3
+    },
+    "8007": {
+      "nome_en": "Enchant Weapon - Worldsoul Cradle",
+      "nome_db2": "Enchant Weapon - Worldsoul Cradle",
+      "nome_pt": "Encantamento de Berço da Alma do Mundo - Arma",
+      "item_id": 243997,
+      "tier": 2,
+      "spell_id": 1236736,
+      "tipo_efeito": 3
+    },
+    "8008": {
+      "nome_en": "Enchant Weapon - Worldsoul Aegis",
+      "nome_db2": "Enchant Weapon - Worldsoul Aegis",
+      "nome_pt": "Encantamento de Égide da Alma do Mundo - Arma",
+      "item_id": 243999,
+      "tier": 1,
+      "spell_id": 1236737,
+      "tipo_efeito": 3
+    },
+    "8009": {
+      "nome_en": "Enchant Weapon - Worldsoul Aegis",
+      "nome_db2": "Enchant Weapon - Worldsoul Aegis",
+      "nome_pt": "Encantamento de Égide da Alma do Mundo - Arma",
+      "item_id": 243999,
+      "tier": 2,
+      "spell_id": 1236738,
+      "tipo_efeito": 3
+    },
+    "8010": {
+      "nome_en": "Enchant Weapon - Worldsoul Tenacity",
+      "nome_db2": "Enchant Weapon - Worldsoul Tenacity",
+      "nome_pt": "Encantamento de Tenacidade da Alma do Mundo - Arma",
+      "item_id": 244001,
+      "tier": 1,
+      "spell_id": 1236729,
+      "tipo_efeito": 3
+    },
+    "8011": {
+      "nome_en": "Enchant Weapon - Worldsoul Tenacity",
+      "nome_db2": "Enchant Weapon - Worldsoul Tenacity",
+      "nome_pt": "Encantamento de Tenacidade da Alma do Mundo - Arma",
+      "item_id": 244001,
+      "tier": 2,
+      "spell_id": 1236730,
+      "tipo_efeito": 3
+    },
+    "8012": {
+      "nome_en": "Enchant Chest - Mark of the Magister",
+      "nome_db2": "Enchant Chest - Mark of the Magister",
+      "nome_pt": "Encantamento da Marca do Magíster - Torso",
+      "item_id": 244003,
+      "tier": 1,
+      "spell_id": 5,
+      "tipo_efeito": 5
+    },
+    "8013": {
+      "nome_en": "Enchant Chest - Mark of the Magister",
+      "nome_db2": "Enchant Chest - Mark of the Magister",
+      "nome_pt": "Encantamento da Marca do Magíster - Torso",
+      "item_id": 244003,
+      "tier": 2,
+      "spell_id": 5,
+      "tipo_efeito": 5
+    },
+    "8014": {
+      "nome_en": "Enchant Helm - Rune of Avoidance",
+      "nome_db2": "Enchant Helm - Rune of Avoidance",
+      "nome_pt": "Encantamento da Runa da Evasão - Elmo",
+      "item_id": 244005,
+      "tier": 1,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8015": {
+      "nome_en": "Enchant Helm - Rune of Avoidance",
+      "nome_db2": "Enchant Helm - Rune of Avoidance",
+      "nome_pt": "Encantamento da Runa da Evasão - Elmo",
+      "item_id": 244005,
+      "tier": 2,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8016": {
+      "nome_en": "Enchant Helm - Empowered Rune of Avoidance",
+      "nome_db2": "Enchant Helm - Empowered Rune of Avoidance",
+      "nome_pt": "Encantamento da Runa da Evasão Potencializada - Elmo",
+      "item_id": 244007,
+      "tier": 1,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8017": {
+      "nome_en": "Enchant Helm - Empowered Rune of Avoidance",
+      "nome_db2": "Enchant Helm - Empowered Rune of Avoidance",
+      "nome_pt": "Encantamento da Runa da Evasão Potencializada - Elmo",
+      "item_id": 244007,
+      "tier": 2,
+      "spell_id": 63,
+      "tipo_efeito": 5
+    },
+    "8018": {
+      "nome_en": "Enchant Boots - Farstrider's Hunt",
+      "nome_db2": "Enchant Boots - Farstrider's Hunt",
+      "nome_pt": "Encantamento da Caça do Andarilho - Botas",
+      "item_id": 244009,
+      "tier": 1,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "8019": {
+      "nome_en": "Enchant Boots - Farstrider's Hunt",
+      "nome_db2": "Enchant Boots - Farstrider's Hunt",
+      "nome_pt": "Encantamento da Caça do Andarilho - Botas",
+      "item_id": 244009,
+      "tier": 2,
+      "spell_id": 61,
+      "tipo_efeito": 5
+    },
+    "8020": {
+      "nome_en": "Enchant Ring - Thalassian Haste",
+      "nome_db2": "Enchant Ring - Thalassian Haste",
+      "nome_pt": "Encantamento da Aceleração Talassiana - Anel",
+      "item_id": 244011,
+      "tier": 1,
+      "spell_id": 36,
+      "tipo_efeito": 5
+    },
+    "8021": {
+      "nome_en": "Enchant Ring - Thalassian Haste",
+      "nome_db2": "Enchant Ring - Thalassian Haste",
+      "nome_pt": "Encantamento da Aceleração Talassiana - Anel",
+      "item_id": 244011,
+      "tier": 2,
+      "spell_id": 36,
+      "tipo_efeito": 5
+    },
+    "8022": {
+      "nome_en": "Enchant Ring - Thalassian Versatility",
+      "nome_db2": "Enchant Ring - Thalassian Versatility",
+      "nome_pt": "Encantamento da Versatilidade Talassiana - Anel",
+      "item_id": 244013,
+      "tier": 1,
+      "spell_id": 40,
+      "tipo_efeito": 5
+    },
+    "8023": {
+      "nome_en": "Enchant Ring - Thalassian Versatility",
+      "nome_db2": "Enchant Ring - Thalassian Versatility",
+      "nome_pt": "Encantamento da Versatilidade Talassiana - Anel",
+      "item_id": 244013,
+      "tier": 2,
+      "spell_id": 40,
+      "tipo_efeito": 5
+    },
+    "8024": {
+      "nome_en": "Enchant Ring - Silvermoon's Alacrity",
+      "nome_db2": "Enchant Ring - Silvermoon's Alacrity",
+      "nome_pt": "Encantamento da Diligência de Luaprata - Anel",
+      "item_id": 244015,
+      "tier": 1,
+      "spell_id": 36,
+      "tipo_efeito": 5
+    },
+    "8025": {
+      "nome_en": "Enchant Ring - Silvermoon's Alacrity",
+      "nome_db2": "Enchant Ring - Silvermoon's Alacrity",
+      "nome_pt": "Encantamento da Diligência de Luaprata - Anel",
+      "item_id": 244015,
+      "tier": 2,
+      "spell_id": 36,
+      "tipo_efeito": 5
+    },
+    "8026": {
+      "nome_en": "Enchant Ring - Silvermoon's Tenacity",
+      "nome_db2": "Enchant Ring - Silvermoon's Tenacity",
+      "nome_pt": "Encantamento da Tenacidade de Luaprata - Anel",
+      "item_id": 244017,
+      "tier": 1,
+      "spell_id": 40,
+      "tipo_efeito": 5
+    },
+    "8027": {
+      "nome_en": "Enchant Ring - Silvermoon's Tenacity",
+      "nome_db2": "Enchant Ring - Silvermoon's Tenacity",
+      "nome_pt": "Encantamento da Tenacidade de Luaprata - Anel",
+      "item_id": 244017,
+      "tier": 2,
+      "spell_id": 40,
+      "tipo_efeito": 5
+    },
+    "8028": {
+      "nome_en": "Enchant Shoulders - Thalassian Recovery",
+      "nome_db2": "Enchant Shoulders - Thalassian Recovery",
+      "nome_pt": "Encantamento da Recuperação Talassiana - Ombros",
+      "item_id": 244019,
+      "tier": 1,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "8029": {
+      "nome_en": "Enchant Shoulders - Thalassian Recovery",
+      "nome_db2": "Enchant Shoulders - Thalassian Recovery",
+      "nome_pt": "Encantamento da Recuperação Talassiana - Ombros",
+      "item_id": 244019,
+      "tier": 2,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "8030": {
+      "nome_en": "Enchant Shoulders - Silvermoon's Mending",
+      "nome_db2": "Enchant Shoulders - Silvermoon's Mending",
+      "nome_pt": "Encantamento da Recomposição de Luaprata - Ombros",
+      "item_id": 244021,
+      "tier": 1,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "8031": {
+      "nome_en": "Enchant Shoulders - Silvermoon's Mending",
+      "nome_db2": "Enchant Shoulders - Silvermoon's Mending",
+      "nome_pt": "Encantamento da Recomposição de Luaprata - Ombros",
+      "item_id": 244021,
+      "tier": 2,
+      "spell_id": 62,
+      "tipo_efeito": 5
+    },
+    "8032": {
+      "nome_en": "Enchant Tool - Sin'dorei Deftness",
+      "nome_pt": "Encantamento de Destreza Sin'dorei - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 244022,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8033": {
+      "nome_en": "Enchant Tool - Sin'dorei Deftness",
+      "nome_pt": "Encantamento de Destreza Sin'dorei - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 244022,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8034": {
+      "nome_en": "Enchant Tool - Ren'dorei Ingenuity",
+      "nome_pt": "Encantamento da Engenhosidade Ren'dorei - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 244024,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8035": {
+      "nome_en": "Enchant Tool - Ren'dorei Ingenuity",
+      "nome_pt": "Encantamento da Engenhosidade Ren'dorei - Ferramenta",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 244024,
+      "tier": null,
+      "grupo": "ferramenta",
+      "nota": null,
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8036": {
+      "nome_en": "Enchant Weapon - Flames of the Sin'dorei",
+      "nome_db2": "Enchant Weapon - Flames of the Sin'dorei",
+      "nome_pt": "Encantamento das Chamas dos Sin'dorei - Arma",
+      "item_id": 244027,
+      "tier": 1,
+      "spell_id": 1236739,
+      "tipo_efeito": 3
+    },
+    "8037": {
+      "nome_en": "Enchant Weapon - Flames of the Sin'dorei",
+      "nome_db2": "Enchant Weapon - Flames of the Sin'dorei",
+      "nome_pt": "Encantamento das Chamas dos Sin'dorei - Arma",
+      "item_id": 244027,
+      "tier": 2,
+      "spell_id": 1236740,
+      "tipo_efeito": 3
+    },
+    "8038": {
+      "nome_en": "Enchant Weapon - Acuity of the Ren'dorei",
+      "nome_db2": "Enchant Weapon - Acuity of the Ren'dorei",
+      "nome_pt": "Encantamento da Acuidade dos Ren'dorei - Arma",
+      "item_id": 244029,
+      "tier": 1,
+      "spell_id": 1236741,
+      "tipo_efeito": 3
+    },
+    "8039": {
+      "nome_en": "Enchant Weapon - Acuity of the Ren'dorei",
+      "nome_db2": "Enchant Weapon - Acuity of the Ren'dorei",
+      "nome_pt": "Encantamento da Acuidade dos Ren'dorei - Arma",
+      "item_id": 244029,
+      "tier": 2,
+      "spell_id": 1236742,
+      "tipo_efeito": 3
+    },
+    "8040": {
+      "nome_en": "Enchant Weapon - Arcane Mastery",
+      "nome_db2": "Enchant Weapon - Arcane Mastery",
+      "nome_pt": "Encantamento da Maestria Arcana - Arma",
+      "item_id": 244031,
+      "tier": 1,
+      "spell_id": 1236712,
+      "tipo_efeito": 3
+    },
+    "8041": {
+      "nome_en": "Enchant Weapon - Arcane Mastery",
+      "nome_db2": "Enchant Weapon - Arcane Mastery",
+      "nome_pt": "Encantamento da Maestria Arcana - Arma",
+      "item_id": 244031,
+      "tier": 2,
+      "spell_id": 1236721,
+      "tipo_efeito": 3
+    },
+    "8051": {
+      "nome_en": "Thalassian Phoenix Oil",
+      "nome_pt": "Óleo de Fênix Talassiano",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243733,
+      "tier": 1,
+      "grupo": "oleo",
+      "nota": "Tier 1 · ilvl 278 · +13 Crítico e +13 Aceleração",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8052": {
+      "nome_en": "Thalassian Phoenix Oil",
+      "nome_pt": "Óleo de Fênix Talassiano",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243734,
+      "tier": 2,
+      "grupo": "oleo",
+      "nota": "Tier 2 · ilvl 295 · +16 Crítico e +16 Aceleração",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8053": {
+      "nome_en": "Oil of Dawn",
+      "nome_pt": "Óleo da Aurora",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243735,
+      "tier": 1,
+      "grupo": "oleo",
+      "nota": "Tier 1 · ilvl 278 · barreira 1.503 · só cura",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8054": {
+      "nome_en": "Oil of Dawn",
+      "nome_pt": "Óleo da Aurora",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243736,
+      "tier": 2,
+      "grupo": "oleo",
+      "nota": "Tier 2 · ilvl 295 · barreira 1.879 · só cura",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8055": {
+      "nome_en": "Smuggler's Enchanted Edge",
+      "nome_pt": "Gume Encantado do Contrabandista",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243737,
+      "tier": 1,
+      "grupo": "oleo",
+      "nota": "Tier 1 · ilvl 278",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8056": {
+      "nome_en": "Smuggler's Enchanted Edge",
+      "nome_pt": "Gume Encantado do Contrabandista",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 243738,
+      "tier": 2,
+      "grupo": "oleo",
+      "nota": "Tier 2 · ilvl 295",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8612": {
+      "nome_en": "Smuggler's Lynxeye",
+      "nome_pt": "Olho de Lince do Contrabandista",
+      "fonte_nome": "nether.wowhead.com tooltip/spell locale=8 — nome do FEITIÇO; nome do item não confirmado",
+      "item_id": null,
+      "tier": 1,
+      "grupo": "oleo",
+      "nota": "Tier 1 · efeito não confirmado",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8613": {
+      "nome_en": "Smuggler's Lynxeye",
+      "nome_pt": "Olho de Lince do Contrabandista",
+      "fonte_nome": "nether.wowhead.com tooltip/spell locale=8 — nome do FEITIÇO; nome do item não confirmado",
+      "item_id": null,
+      "tier": 2,
+      "grupo": "oleo",
+      "nota": "Tier 2 · efeito não confirmado",
+      "spell_id": null,
+      "tipo_efeito": null
+    },
+    "8688": {
+      "nome_en": "Enchant Weapon - Rite of the Hash'ey",
+      "nome_db2": "Rite of the Hash'ey",
+      "nome_pt": "Encantamento de Rito dos Hash'ey - Arma",
+      "item_id": 273072,
+      "tier": 1,
+      "spell_id": 1297651,
+      "tipo_efeito": 3
+    },
+    "8689": {
+      "nome_en": "Enchant Weapon - Rite of the Hash'ey",
+      "nome_db2": "Rite of the Hash'ey",
+      "nome_pt": "Encantamento de Rito dos Hash'ey - Arma",
+      "item_id": 273072,
+      "tier": 2,
+      "spell_id": 1297652,
+      "tipo_efeito": 3
+    },
+    "8702": {
+      "nome_en": "R0CKY",
+      "nome_pt": "R0CKY pra Viagem",
+      "fonte_nome": "nether.wowhead.com tooltip/item locale=8 (nome oficial PT-BR)",
+      "item_id": 275676,
+      "tier": null,
+      "grupo": "tinker",
+      "nota": "elmo · reduz velocidade de queda por 2 min · Engenharia",
+      "spell_id": null,
+      "tipo_efeito": null
+    }
+  },
+  "catalogo_sem_enchant_id": [
+    "Sunfire Silk Spellthread",
+    "Arcanoweave Spellthread",
+    "Bright Linen Spellthread",
+    "Forest Hunter's Armor Kit",
+    "Blood Knight's Armor Kit",
+    "Thalassian Scout Armor Kit"
+  ]
+}

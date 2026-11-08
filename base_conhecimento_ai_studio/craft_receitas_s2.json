@@ -1,0 +1,1536 @@
+{
+  "_meta": {
+    "documento": "craft_receitas_s2.json",
+    "papel": "Inventário das receitas craftáveis da Temporada 2, por profissão — equipamento e consumíveis de raide (runas Vantus). Complementa craft_sistemas_s2.json (embelezamentos, missivas e reagentes).",
+    "patch": "12.1.5 — A Maldição de Ula'tek",
+    "temporada": "Midnight Season 2",
+    "raspado_em": "2026-11-05",
+    "fonte": "Wowhead — Midnight Profession Overview (Blacksmithing, Leatherworking, Tailoring, Jewelcrafting, Inscription, Engineering) e Wowhead Professions System Overview",
+    "metodo": "Firecrawl com extração em JSON sobre as páginas de visão geral de cada profissão; nomes PT-BR conferidos no tooltip oficial (nether.wowhead.com, locale=8) por tools/auditar_craft.js",
+    "aviso": "Nomes marcados com nome_pt: null ainda não foram conferidos no tooltip PT-BR. Não inventar tradução."
+  },
+  "niveis_de_craft": {
+    "teto_temporada": 331,
+    "faixas": [
+      {
+        "reagente": "Centelha de Marés (Spark of Tides)",
+        "id_reagente": 274476,
+        "crest": null,
+        "faixa_ilvl": [
+          292,
+          305
+        ],
+        "rotulo": "Base craftada"
+      },
+      {
+        "reagente": "Centelha de Marés + 80 Cristas de Névoa Heroicas",
+        "id_reagente": 274476,
+        "crest": "Hero Mistcrest",
+        "id_crest": 3445,
+        "faixa_ilvl": [
+          305,
+          318
+        ],
+        "rotulo": "Herói"
+      },
+      {
+        "reagente": "Centelha de Marés + 80 Cristas de Névoa Míticas",
+        "id_reagente": 274476,
+        "crest": "Myth Mistcrest",
+        "id_crest": 3446,
+        "faixa_ilvl": [
+          318,
+          331
+        ],
+        "rotulo": "Mítico"
+      }
+    ],
+    "custo_centelhas": {
+      "armadura_e_uma_mao": 2,
+      "duas_maos": 4
+    },
+    "observacao": "331 é o teto absoluto do craft na temporada. O tier mítico de raide vai a 334 e os itens 'Amaldiçoado com Peçonha' a 344."
+  },
+  "regra_de_limite": {
+    "tag_oficial_pt": "Único-equipado: Embelezado (2)",
+    "tag_oficial_en": "Unique-Equipped: Embellished (2)",
+    "limite_de_efeitos": 2,
+    "limite_de_pecas_craftadas": null,
+    "explicacao": "O limite é sobre EFEITOS de embelezamento, não sobre peças craftadas. Duas peças embelezadas (efeito embutido ou reagente opcional aplicado) dão efeito; a terceira em diante continua equipável e continua valendo pelos atributos, mas o efeito não funciona.",
+    "consequencia": "É permitido usar mais de duas peças craftadas na mesma build, desde que no máximo duas carreguem embelezamento.",
+    "fontes": [
+      "Wowhead — Professions System Overview: 'Unique-Equipped: Embellished (2) tag, meaning only two pieces of Embellished equipment can be used at once'",
+      "LevelUpper — Crafted Gear Guide: 'There is no hard cap of two crafted items. Sparks cap how many you make. The two-Embellishment rule caps how many of those effects you get to keep.'",
+      "Tooltip oficial PT-BR: 'Único-equipado: Embelezado (2)' em todas as peças embelezadas"
+    ]
+  },
+  "fontes_raspadas": [
+    "https://www.wowhead.com/guide/professions/overview",
+    "https://www.wowhead.com/guide/midnight/professions/blacksmithing-overview-trainer-locations-recipes-tools",
+    "https://www.wowhead.com/guide/midnight/professions/leatherworking-overview-trainer-locations-recipes-tools",
+    "https://www.wowhead.com/guide/midnight/professions/tailoring-overview-trainer-locations-recipes-tools",
+    "https://www.wowhead.com/guide/midnight/professions/jewelcrafting-overview-trainer-locations-recipes-tools",
+    "https://www.wowhead.com/guide/midnight/professions/inscription-overview-trainer-locations-recipes-tools",
+    "https://www.wowhead.com/guide/midnight/professions/engineering-overview-trainer-locations-recipes-tools",
+    "https://www.method.gg/guides/list-of-all-midnight-embellishments",
+    "https://www.method.gg/guides/midnight-missives-for-crafted-gear-profession-equipment",
+    "https://levelupper.com/blog/crafted-gear-guide",
+    "https://levelupper.com/blog/wow-best-crafted-gear-embellishments-for-all-classes"
+  ],
+  "receitas": {
+    "ferraria": {
+      "nome_pt": "Ferraria (Blacksmithing)",
+      "armaduras_placa": [
+        {
+          "id": 237834,
+          "nome_pt": "Braçadeiras do Quebra-feitiço",
+          "nome_en": "Spellbreaker's Bracers",
+          "slot": "pulsos",
+          "familia": "Quebra-feitiço",
+          "icone": "inv_plate_questbloodelf_b_01_bracer",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_plate_questbloodelf_b_01_bracer.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_plate_questbloodelf_b_01_bracer.jpg"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Cover",
+          "slot": "cabeça",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Shelter",
+          "slot": "peitoral",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Resolve",
+          "slot": "mãos",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Girdle",
+          "slot": "cinto",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Legguards",
+          "slot": "pernas",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": 237828,
+          "nome_pt": "Marcha do Quebra-feitiço",
+          "nome_en": "Spellbreaker's March",
+          "slot": "pés",
+          "familia": "Quebra-feitiço",
+          "icone": "inv_plate_questbloodelf_b_01_boot",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_plate_questbloodelf_b_01_boot.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_plate_questbloodelf_b_01_boot.jpg"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Mantle",
+          "slot": "ombros",
+          "familia": "Quebra-feitiço"
+        },
+        {
+          "id": 244463,
+          "nome_pt": "Pés Ligeiros da Travessa do Assassino",
+          "nome_en": "Murder Row Fleet Feet",
+          "slot": "pés",
+          "familia": "Travessa do Assassino",
+          "embelezado_embutido": true,
+          "icone": "inv_plate_questbloodelf_b_01_boot",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_plate_questbloodelf_b_01_boot.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_plate_questbloodelf_b_01_boot.jpg"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Basinet",
+          "slot": "cabeça",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Pauldrons",
+          "slot": "ombros",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Chestplate",
+          "slot": "peitoral",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Bracers",
+          "slot": "pulsos",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Gauntlets",
+          "slot": "mãos",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Greatbelt",
+          "slot": "cinto",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Leggings",
+          "slot": "pernas",
+          "familia": "Têmpera de Sangue"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Greaves",
+          "slot": "pés",
+          "familia": "Têmpera de Sangue"
+        }
+      ],
+      "escudos": [
+        {
+          "id": 244472,
+          "nome_pt": "Paliçada do Cavaleiro Comandante",
+          "nome_en": "Knight-Commander's Palisade",
+          "slot": "mão secundária (escudo)",
+          "embelezado_embutido": true,
+          "icone": "inv_shield_1h_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_1h_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_1h_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 237831,
+          "nome_pt": "Repreensão do Quebra-feitiço",
+          "nome_en": "Spellbreaker's Rebuke",
+          "slot": "mão secundária (escudo)",
+          "icone": "inv_shield_1h_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_1h_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_1h_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood-Tempered Bulwark",
+          "slot": "mão secundária (escudo)"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Thalassian Competitor's Bulwark",
+          "slot": "mão secundária (escudo)",
+          "pvp": true
+        }
+      ],
+      "armas_uma_mao": [
+        {
+          "id": 237837,
+          "nome_pt": "Misericórdia do Andarilho",
+          "nome_en": "Farstrider's Mercy",
+          "slot": "adaga",
+          "icone": "inv_knife_1h_questbloodelf_b_02",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_02.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_02.jpg"
+        },
+        {
+          "id": 237839,
+          "nome_pt": "Lâmina do Quebra-feitiço",
+          "nome_en": "Spellbreaker's Blade",
+          "slot": "espada 1M",
+          "icone": "inv_sword_1h_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 237850,
+          "nome_pt": "Picador do Andarilho",
+          "nome_en": "Farstrider's Chopper",
+          "slot": "machado 1M",
+          "icone": "inv_axe_1h_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_1h_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 237840,
+          "nome_pt": "Glaive de Guerra do Quebra-feitiço",
+          "nome_en": "Spellbreaker's Warglaive",
+          "slot": "glaive",
+          "icone": "inv_glaive_1h_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glaive_1h_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244679,
+          "nome_pt": "Anzol da Travessa do Assassino",
+          "nome_en": "Murder Row Fishhook",
+          "slot": "adaga",
+          "embelezado_embutido": true,
+          "icone": "inv_knife_1h_questbloodelf_b_02",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_02.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_02.jpg"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Spellbreaker's Ultimatum",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Magister's Cleaver",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Magister's Mana Sword",
+          "slot": "espada 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Magister's Ritual Knife",
+          "slot": "adaga"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Bloomforged Claw",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Primalforged Knuckles",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Dawnforged Long Blade",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Dawnforged Splitter",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Dawnforged Edge",
+          "slot": "arma 1M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Dawnforged Ritual Knife",
+          "slot": "adaga"
+        }
+      ],
+      "armas_duas_maos": [
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood Knight's Impetus",
+          "slot": "arma 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood Knight's Mercy",
+          "slot": "arma 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Blood Knight's Warblade",
+          "slot": "espada 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Bloomforged Greataxe",
+          "slot": "machado 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Magister's Valediction",
+          "slot": "arma 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Dawnforged War Mace",
+          "slot": "malho 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Primalforged Heavy Axe",
+          "slot": "machado 2M"
+        },
+        {
+          "id": null,
+          "nome_pt": null,
+          "nome_en": "Thalassian Competitor's Greatsword",
+          "slot": "espada 2M",
+          "pvp": true
+        }
+      ],
+      "armas_pvp_uma_mao": [
+        {
+          "nome_en": "Thalassian Competitor's Knife"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Maxim"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Skewer"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Splitter"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Sword"
+        }
+      ],
+      "reagentes_de_arma": [
+        {
+          "nome_en": "Refulgent Weightstone",
+          "papel": "pedra de arma (mão secundária declarada na receita)"
+        },
+        {
+          "nome_en": "Refulgent Razorstone",
+          "papel": "pedra de arma"
+        },
+        {
+          "nome_en": "Refulgent Whetstone",
+          "papel": "pedra de arma"
+        },
+        {
+          "id": 273060,
+          "nome_pt": "Pedra Ritual do Caçador",
+          "nome_en": "Hunter's Ritual Stone",
+          "papel": "embelezamento de arma"
+        }
+      ]
+    },
+    "couraria": {
+      "nome_pt": "Couraria (Leatherworking)",
+      "armaduras_couro": [
+        {
+          "id": 244576,
+          "nome_pt": "Defletores do Agente de Luaprata",
+          "nome_en": "Silvermoon Agent's Deflectors",
+          "slot": "pulsos",
+          "familia": "Agente de Luaprata",
+          "icone": "inv_bracer_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244572,
+          "nome_pt": "Dragonas do Agente de Luaprata",
+          "nome_en": "Silvermoon Agent's Mantle",
+          "slot": "ombros",
+          "familia": "Agente de Luaprata",
+          "icone": "inv_shoulder_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shoulder_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244573,
+          "nome_pt": "Cinto de Utilidades do Agente de Luaprata",
+          "nome_en": "Silvermoon Agent's Utility Belt",
+          "slot": "cinto",
+          "familia": "Agente de Luaprata",
+          "icone": "inv_belt_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244575,
+          "nome_pt": "Mitenes do Agente de Luaprata",
+          "nome_en": "Silvermoon Agent's Handwraps",
+          "slot": "mãos",
+          "familia": "Agente de Luaprata",
+          "icone": "inv_glove_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glove_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244569,
+          "nome_pt": "Calçados do Agente de Luaprata",
+          "nome_en": "Silvermoon Agent's Sneakers",
+          "slot": "pés",
+          "familia": "Agente de Luaprata",
+          "icone": "inv_boot_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244601,
+          "nome_pt": "Ataduras de Raiz da Árvore do Mundo",
+          "nome_en": "World Tree Rootwraps",
+          "slot": "pés",
+          "embelezado_embutido": true,
+          "icone": "inv_boot_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244606,
+          "nome_pt": "Faixa de Bagatame",
+          "nome_en": "Hexwoven Strand",
+          "slot": "cinto",
+          "embelezado_embutido": true,
+          "icone": "inv_belt_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244612,
+          "nome_pt": "Defletores do Andarilho das Fileiras",
+          "nome_en": "Row Walker's Deflectors",
+          "slot": "pulsos",
+          "embelezado_embutido": true,
+          "icone": "inv_bracer_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244613,
+          "nome_pt": "Segurança do Andarilho das Fileiras",
+          "nome_en": "Row Walker's Insurance",
+          "slot": "peitoral",
+          "embelezado_embutido": true,
+          "icone": "inv_chest_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_chest_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244614,
+          "nome_pt": "Guantes Velozes do Andarilho das Fileiras",
+          "nome_en": "Row Walker's Swiftgrips",
+          "slot": "mãos",
+          "embelezado_embutido": true,
+          "icone": "inv_glove_leather_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glove_leather_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Mask",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Shoulderpads",
+          "slot": "ombros",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Chestpiece",
+          "slot": "peitoral",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Wristwraps",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Gloves",
+          "slot": "mãos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Belt",
+          "slot": "cinto",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Trousers",
+          "slot": "pernas",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Boots",
+          "slot": "pés",
+          "pvp": true
+        }
+      ],
+      "armaduras_malha": [
+        {
+          "id": 244584,
+          "nome_pt": "Braçadeiras de Placa do Andarilho",
+          "nome_en": "Farstrider's Plated Bracers",
+          "slot": "pulsos",
+          "familia": "Andarilho",
+          "icone": "inv_bracer_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Farstrider's Brilliant Plumes",
+          "slot": "ombros",
+          "familia": "Andarilho"
+        },
+        {
+          "nome_en": "Farstrider's Scouting Vest",
+          "slot": "peitoral",
+          "familia": "Andarilho"
+        },
+        {
+          "id": 244581,
+          "nome_pt": "Cinto de Troféu do Andarilho",
+          "nome_en": "Farstrider's Trophy Belt",
+          "slot": "cinto",
+          "familia": "Andarilho",
+          "icone": "inv_belt_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Farstrider's Sharpened Claws",
+          "slot": "mãos",
+          "familia": "Andarilho"
+        },
+        {
+          "nome_en": "Farstrider's Unwavering Visage",
+          "slot": "cabeça",
+          "familia": "Andarilho"
+        },
+        {
+          "nome_en": "Farstrider's Reinforced Faulds",
+          "slot": "pernas",
+          "familia": "Andarilho"
+        },
+        {
+          "id": 244577,
+          "nome_pt": "Garras de Navalha do Andarilho",
+          "nome_en": "Farstrider's Razor Talons",
+          "slot": "pés",
+          "familia": "Andarilho",
+          "icone": "inv_boot_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244609,
+          "nome_pt": "Guarda-tronco do Conservador de Mundos",
+          "nome_en": "World Tender's Trunkplate",
+          "slot": "peitoral",
+          "embelezado_embutido": true,
+          "icone": "inv_chest_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_chest_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_chest_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244610,
+          "nome_pt": "Sapatiraiz do Conservador de Mundos",
+          "nome_en": "World Tender's Rootslippers",
+          "slot": "pés",
+          "embelezado_embutido": true,
+          "icone": "inv_boot_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244611,
+          "nome_pt": "Arvofecho do Conservador de Mundos",
+          "nome_en": "World Tender's Barkclasp",
+          "slot": "cinto",
+          "embelezado_embutido": true,
+          "icone": "inv_belt_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244602,
+          "nome_pt": "Guantes da General-patrulheira",
+          "nome_en": "Ranger-General's Grips",
+          "slot": "mãos",
+          "embelezado_embutido": true,
+          "icone": "inv_glove_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glove_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glove_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 244605,
+          "nome_pt": "Embraces Lançadores de Machado",
+          "nome_en": "Axe-Flingin' Bands",
+          "slot": "pulsos",
+          "embelezado_embutido": true,
+          "icone": "inv_bracer_mail_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_mail_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_mail_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Cowl",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Epaulets",
+          "slot": "ombros",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Cuffs",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Grips",
+          "slot": "mãos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Girdle",
+          "slot": "cinto",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Leggings",
+          "slot": "pernas",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Chain Stompers",
+          "slot": "pés",
+          "pvp": true
+        }
+      ],
+      "outros": [
+        {
+          "nome_en": "Void-Touched Drums",
+          "slot": "consumível"
+        },
+        {
+          "nome_en": "Blood Knight's Armor Kit",
+          "slot": "kit de armadura"
+        }
+      ]
+    },
+    "alfaiataria": {
+      "nome_pt": "Alfaiataria (Tailoring)",
+      "armaduras_tecido": [
+        {
+          "id": 239648,
+          "nome_pt": "Braceletes do Mártir",
+          "nome_en": "Martyr's Bindings",
+          "slot": "pulsos",
+          "familia": "Mártir",
+          "icone": "inv_bracer_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Martyr's Crown",
+          "slot": "cabeça",
+          "familia": "Mártir"
+        },
+        {
+          "nome_en": "Martyr's Mantle",
+          "slot": "ombros",
+          "familia": "Mártir"
+        },
+        {
+          "nome_en": "Martyr's Vestments",
+          "slot": "peitoral",
+          "familia": "Mártir"
+        },
+        {
+          "nome_en": "Martyr's Gloves",
+          "slot": "mãos",
+          "familia": "Mártir"
+        },
+        {
+          "id": 239649,
+          "nome_pt": "Banda do Mártir",
+          "nome_en": "Martyr's Waistwrap",
+          "slot": "cinto",
+          "familia": "Mártir",
+          "icone": "inv_belt_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Martyr's Leggings",
+          "slot": "pernas",
+          "familia": "Mártir"
+        },
+        {
+          "nome_en": "Martyr's Slippers",
+          "slot": "pés",
+          "familia": "Mártir"
+        },
+        {
+          "nome_en": "Courtly Helm",
+          "slot": "cabeça",
+          "familia": "Cortesão",
+          "id": 239668,
+          "nome_pt": "Elmo Cortesão",
+          "ilvl": 201,
+          "icone": "inv_helm_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_helm_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_helm_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Shoulders",
+          "slot": "ombros",
+          "familia": "Cortesão",
+          "id": 239675,
+          "nome_pt": "Omoplatas Cortesãs",
+          "ilvl": 201,
+          "icone": "inv_shoulder_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shoulder_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Robes",
+          "slot": "peitoral",
+          "familia": "Cortesão",
+          "id": 239672,
+          "nome_pt": "Vestes Cortesãs",
+          "ilvl": 201,
+          "icone": "inv_robe_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_robe_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_robe_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Gloves",
+          "slot": "mãos",
+          "familia": "Cortesão",
+          "id": 239669,
+          "nome_pt": "Luvas Cortesãs",
+          "ilvl": 201,
+          "icone": "inv_glove_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glove_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glove_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Belt",
+          "slot": "cinto",
+          "familia": "Cortesão",
+          "id": 239670,
+          "nome_pt": "Cinto Cortesão",
+          "ilvl": 165,
+          "icone": "inv_belt_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Pants",
+          "slot": "pernas",
+          "familia": "Cortesão",
+          "id": 239676,
+          "nome_pt": "Calças Cortesãs",
+          "ilvl": 201,
+          "icone": "inv_pant_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_pant_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_pant_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Slippers",
+          "slot": "pés",
+          "familia": "Cortesão",
+          "id": 239673,
+          "nome_pt": "Sapatilhas Cortesãs",
+          "ilvl": 165,
+          "icone": "inv_boot_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Wrists",
+          "slot": "pulsos",
+          "familia": "Cortesão",
+          "id": 239671,
+          "nome_pt": "Pulsos Cortesãos",
+          "ilvl": 165,
+          "icone": "inv_bracer_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239660,
+          "nome_pt": "Braçadeiras de Arcanotrama",
+          "nome_en": "Arcanoweave Bracers",
+          "slot": "pulsos",
+          "embelezado_embutido": true,
+          "icone": "inv_bracer_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239664,
+          "nome_pt": "Cordão de Arcanotrama",
+          "nome_en": "Arcanoweave Cord",
+          "slot": "cinto",
+          "embelezado_embutido": true,
+          "icone": "inv_belt_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239662,
+          "nome_pt": "Botinas de Arcanotrama",
+          "nome_en": "Arcanoweave Treads",
+          "slot": "pés",
+          "embelezado_embutido": true,
+          "icone": "inv_boot_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239657,
+          "nome_pt": "Braçadeiras de Fogo Solar",
+          "nome_en": "Sunfire Bracers",
+          "slot": "pulsos",
+          "embelezado_embutido": true,
+          "icone": "inv_bracer_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_bracer_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_bracer_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239663,
+          "nome_pt": "Faixa de Fogo Solar",
+          "nome_en": "Sunfire Sash",
+          "slot": "cinto",
+          "embelezado_embutido": true,
+          "icone": "inv_belt_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_belt_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_belt_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239659,
+          "nome_pt": "Botinas de Fogo Solar",
+          "nome_en": "Sunfire Treads",
+          "slot": "pés",
+          "embelezado_embutido": true,
+          "icone": "inv_boot_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_boot_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_boot_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Hood",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Shoulderpads",
+          "slot": "ombros",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Tunic",
+          "slot": "peitoral",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Bands",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Gloves",
+          "slot": "mãos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Sash",
+          "slot": "cinto",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Leggings",
+          "slot": "pernas",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Treads",
+          "slot": "pés",
+          "pvp": true
+        }
+      ],
+      "capas": [
+        {
+          "id": 239656,
+          "nome_pt": "Mortalha Sedosa do Seguidor",
+          "nome_en": "Adherent's Silken Shroud",
+          "slot": "costas",
+          "familia": "Seguidor",
+          "icone": "inv_cape_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_cape_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_cape_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "nome_en": "Courtly Cloak",
+          "slot": "costas",
+          "familia": "Cortesão",
+          "id": 239674,
+          "nome_pt": "Manto Cortesão",
+          "ilvl": 201,
+          "icone": "inv_misc_cape_23",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cape_23.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_cape_23.jpg"
+        },
+        {
+          "id": 239661,
+          "nome_pt": "Manto de Arcanotrama",
+          "nome_en": "Arcanoweave Cloak",
+          "slot": "costas",
+          "embelezado_embutido": true,
+          "icone": "inv_cape_cloth_questbloodelf_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_cape_cloth_questbloodelf_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_cape_cloth_questbloodelf_b_01.jpg"
+        },
+        {
+          "id": 239658,
+          "nome_pt": "Manto de Fogo Solar",
+          "nome_en": "Sunfire Cloak",
+          "slot": "costas",
+          "embelezado_embutido": true,
+          "icone": "inv_cape_firelands_fireset_d_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_cape_firelands_fireset_d_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_cape_firelands_fireset_d_01.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Cloak",
+          "slot": "costas",
+          "pvp": true
+        }
+      ]
+    },
+    "joalheria": {
+      "nome_pt": "Joalheria (Jewelcrafting)",
+      "aneis": [
+        {
+          "id": 240949,
+          "nome_pt": "Elo Sin'dorei Magistral",
+          "nome_en": "Masterwork Sin'dorei Band",
+          "slot": "anel",
+          "familia": "Sin'dorei Magistral",
+          "icone": "inv_12_profession_jewelcrafting_ring4_gold",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_ring4_gold.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_ring4_gold.jpg"
+        },
+        {
+          "nome_en": "Gleaming Copper Band",
+          "slot": "anel"
+        },
+        {
+          "id": 241140,
+          "nome_pt": "Sinete das Bênçãos Azerothianas",
+          "nome_en": "Signet of Azerothian Blessings",
+          "slot": "anel",
+          "embelezado_embutido": true,
+          "icone": "inv_12_profession_jewelcrafting_ring1_gold",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_ring1_gold.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_ring1_gold.jpg"
+        },
+        {
+          "id": 251513,
+          "nome_pt": "Elo do Adorador dos Loas",
+          "nome_en": "Loa Worshiper's Band",
+          "slot": "anel",
+          "embelezado_embutido": true,
+          "icone": "inv_12_profession_jewelcrafting_ring3_silver",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_ring3_silver.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_ring3_silver.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Signet",
+          "slot": "anel",
+          "pvp": true
+        }
+      ],
+      "pescocos": [
+        {
+          "id": 240950,
+          "nome_pt": "Amuleto Sin'dorei Magistral",
+          "nome_en": "Masterwork Sin'dorei Amulet",
+          "slot": "pescoço",
+          "familia": "Sin'dorei Magistral",
+          "icone": "inv_12_profession_jewelcrafting_necklace2_gold",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_necklace2_gold.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_necklace2_gold.jpg"
+        },
+        {
+          "nome_en": "Nocturnal Charm",
+          "slot": "pescoço"
+        },
+        {
+          "id": 241139,
+          "nome_pt": "Torque de Fênix Talassiana",
+          "nome_en": "Thalassian Phoenix Torque",
+          "slot": "pescoço",
+          "embelezado_embutido": true,
+          "icone": "inv_12_profession_jewelcrafting_necklace1_gold",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_necklace1_gold.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_necklace1_gold.jpg"
+        },
+        {
+          "id": 251073,
+          "nome_pt": "Matriz de Proteção de Pedra do Caos",
+          "nome_en": "Voidstone Shielding Array",
+          "slot": "pescoço",
+          "embelezado_embutido": true,
+          "icone": "inv_12_profession_jewelcrafting_necklace3_silver",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_profession_jewelcrafting_necklace3_silver.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_12_profession_jewelcrafting_necklace3_silver.jpg"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Amulet",
+          "slot": "pescoço",
+          "pvp": true
+        }
+      ]
+    },
+    "escrivania": {
+      "nome_pt": "Escrivania (Inscription)",
+      "armas": [
+        {
+          "id": 245771,
+          "nome_pt": "Cajado-pique de Aln'hara",
+          "nome_en": "Aln'hara Pikestaff",
+          "slot": "cajado 2M",
+          "icone": "inv_staff_2h_dungeonharronir_c_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_dungeonharronir_c_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_staff_2h_dungeonharronir_c_01.jpg"
+        },
+        {
+          "nome_en": "Aln'hara Cane",
+          "slot": "cajado 2M"
+        },
+        {
+          "nome_en": "Faunatender's Baton",
+          "slot": "cajado 2M"
+        },
+        {
+          "nome_en": "Floratender's Crutch",
+          "slot": "cajado 2M"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Staff",
+          "slot": "cajado 2M",
+          "pvp": true
+        },
+        {
+          "nome_en": "Aln'hara Sprigshot",
+          "slot": "arco"
+        },
+        {
+          "nome_en": "Faunatender's Trust",
+          "slot": "arco"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Bow",
+          "slot": "arco",
+          "pvp": true
+        }
+      ],
+      "maos_secundarias": [
+        {
+          "id": 245769,
+          "nome_pt": "Lanterna de Aln'hara",
+          "nome_en": "Aln'hara Lantern",
+          "slot": "mão secundária",
+          "icone": "inv_offhand_1h_dungeonharronir_c_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_dungeonharronir_c_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_offhand_1h_dungeonharronir_c_01.jpg"
+        },
+        {
+          "nome_en": "Rootwarden's Lamp",
+          "slot": "mão secundária"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Lamp",
+          "slot": "mão secundária",
+          "pvp": true
+        }
+      ],
+      "berloques_pvp": [
+        {
+          "nome_en": "Thalassian Competitor's Emblem"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Insignia of Alacrity"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Medallion"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Pillar"
+        }
+      ],
+      "runas_e_consumiveis": {
+        "nota": "A Escrivania fabrica os consumíveis de raide (runas Vantus) além do equipamento. Esta seção existe porque a Runa Vantus: Resplandecente é INSUMO da Runa Vantus: Marés — é o único lugar do repositório onde esse papel está declarado. Sem esta receita registrada, a leitura natural do catálogo de itens é a errada (tratar a Resplandecente como runa consumível alternativa).",
+        "receitas": [
+          {
+            "id_receita": 1290561,
+            "nome_pt": "Runa Vantus: Marés",
+            "nome_en": "Vantus Rune: Tides",
+            "tipo": "consumivel_de_raide",
+            "patch": "12.1.0 — Curse of Ula'tek",
+            "profissao": "Escrivania de Midnight (Inscription)",
+            "skill": 80,
+            "estacao": "Mesa de Rascunho do Escriba (Scribe's Drafting Table)",
+            "resultado_ids": [
+              272194,
+              272195
+            ],
+            "resultado_nota": "A qualidade da criação define o rank: qualidade 1 gera 272194 (+130 Versatilidade); qualidade 2 gera 272195 (+162 Versatilidade). Ambos com nível de item 278.",
+            "alvo_do_efeito": "chefe de raide selecionado no Templo de Ula'tek — mesma raide que o projeto chama de Abismo Peçonhento (The Venomous Abyss), a raide da Temporada 2",
+            "duracao": "a semana toda, uma ativação por semana",
+            "reagentes": [
+              {
+                "id": 245882,
+                "nome_pt": "Água Musical Talassiana",
+                "nome_en": "Thalassian Songwater",
+                "qtd": 1,
+                "origem": "comerciante"
+              },
+              {
+                "id": 245881,
+                "nome_pt": "Velino do Lexicólogo",
+                "nome_en": "Lexicologist's Vellum",
+                "qtd": 1,
+                "origem": "comerciante"
+              },
+              {
+                "id": 251285,
+                "nome_pt": "Raiz Petrificada",
+                "nome_en": "Petrified Root",
+                "qtd": 2,
+                "origem": "Casa de Leilões"
+              },
+              {
+                "id": 274781,
+                "nome_pt": "Globo Pragatado",
+                "nome_en": "Cursebound Globe",
+                "qtd": 2,
+                "origem": "Casa de Leilões"
+              },
+              {
+                "id": 245766,
+                "nome_pt": "Código de Alma",
+                "nome_en": "Soul Cipher",
+                "qtd": 1,
+                "origem": "produzido por Escrivania"
+              },
+              {
+                "id": 245879,
+                "nome_pt": "Runa Vantus: Resplandecente",
+                "nome_en": "Vantus Rune: Radiant",
+                "qtd": 1,
+                "origem": "produzido por Escrivania (rank 278)",
+                "papel": "INSUMO — consumido no craft, não concede buff"
+              }
+            ],
+            "reagentes_opcionais": [
+              {
+                "nome_pt": "Autenticidade do Artesão",
+                "nome_en": "Artisan's Authenticity",
+                "indice": 396,
+                "qtd": 1
+              }
+            ],
+            "tecnica": {
+              "id": 272196,
+              "nome_pt": "Técnica: Runa Vantus: Marés",
+              "requisito_profissao": "Escrivania de Midnight (50)",
+              "gargalo_de_acesso": "Ranque de Renome 5 com as Forças de Zul'jarra",
+              "vendedor": "Jan'sari, a Vigilante",
+              "local": "Ilha Enrolada (The Coiled Isle)",
+              "custo": "150 Moxie do Escriba Artesão (Artisan's Scribe's Moxie, moeda 3261)"
+            },
+            "lacunas": [
+              "Não verificado se a qualidade 3+ da criação gera rank acima de 272195",
+              "Não verificado se o Globo Pragatado é sazonal (pode sair de circulação no fim da temporada)"
+            ],
+            "fonte": "https://www.wowhead.com/spell=1290561/vantus-rune-tides"
+          }
+        ],
+        "runas_nao_craftaveis_nesta_temporada": {
+          "245879": "Runa Vantus: Resplandecente (rank 278) — papel é reagente da Runa Vantus: Marés",
+          "245880": "Runa Vantus: Resplandecente (rank 295) — versão de qualidade superior; NÃO consta como reagente da receita da Marés",
+          "nota": "A aura das duas Resplandecentes é declarada pelo tooltip contra chefes da Temporada 1 (Marcha em Quel'Danas, Fenda Onírica, Torre do Caos, Esporasca). Não serve para o Templo de Ula'tek."
+        },
+        "runa_de_aprimoramento": {
+          "id": 259085,
+          "nome_pt": "Runa de Aprimoramento Tocada pelo Caos",
+          "nome_en": "Void-Touched Augment Rune",
+          "efeito": "+25 de atributo primário por 1 hora",
+          "nota": "Não é Vantus e não compete com a Vantus: são camadas diferentes."
+        }
+      }
+    },
+    "engenharia": {
+      "nome_pt": "Engenharia (Engineering)",
+      "armaduras": [
+        {
+          "nome_en": "Aetherlume Eye Wrap",
+          "slot": "cabeça"
+        },
+        {
+          "nome_en": "Aetherlume Vision Shroud",
+          "slot": "cabeça"
+        },
+        {
+          "nome_en": "Aetherlume Silken Cuffs",
+          "slot": "pulsos"
+        },
+        {
+          "nome_en": "Aetherlume Bands",
+          "slot": "pulsos"
+        },
+        {
+          "nome_en": "Aetherlume Softsteppers",
+          "slot": "pés"
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Goggles",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Cuffs",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Cloth Tip-Toes",
+          "slot": "pés",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Optics",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Bands",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Leather Sliders",
+          "slot": "pés",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Mail Visor",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Mail Links",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Mail Footlinks",
+          "slot": "pés",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Plate Guard",
+          "slot": "cabeça",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Plate Bindings",
+          "slot": "pulsos",
+          "pvp": true
+        },
+        {
+          "nome_en": "Thalassian Competitor's Plate Dunkers",
+          "slot": "pés",
+          "pvp": true
+        }
+      ],
+      "armas_de_fogo": [
+        {
+          "id": 268475,
+          "nome_pt": "Quebra-coco Evinúcleo",
+          "nome_en": "Evercore Dome Dinger",
+          "ilvl": 201,
+          "qualidade": "Rara (Azul)",
+          "tipo": "longo alcance (arma de fogo)",
+          "receita_spell": 1282455,
+          "habilidade_requerida": "Engenharia de Midnight (35)",
+          "origem": "Fabricado por Engenharia de Midnight — aceita Olho de Cobra Enrolado (273062)",
+          "icone": "inv_firearm_2h_engineering_c_01_blue",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_engineering_c_01_blue.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_engineering_c_01_blue.jpg"
+        },
+        {
+          "id": 268477,
+          "nome_pt": "P.O.U. x3",
+          "nome_en": "P.O.U. x3",
+          "ilvl": 246,
+          "qualidade": "Épica (Roxa, sobe até 331 com Centelha e Cristas Míticas)",
+          "tipo": "longo alcance (arma de fogo)",
+          "receita_spell": 1282456,
+          "habilidade_requerida": "Engenharia de Midnight (90)",
+          "origem": "Fabricado por Engenharia de Midnight — aceita Olho de Cobra Enrolado (273062) e Centelha",
+          "icone": "inv_firearm_2h_raidmidnight_d_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_raidmidnight_d_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_raidmidnight_d_01.jpg"
+        },
+        {
+          "id": 268479,
+          "nome_pt": "Rifle do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Rifle",
+          "ilvl": 263,
+          "qualidade": "Incomum (Verde JxJ, escala para 263 em PvP)",
+          "tipo": "longo alcance (arma de fogo)",
+          "receita_spell": 1282457,
+          "habilidade_requerida": "Engenharia de Midnight (60)",
+          "origem": "Fabricado por Engenharia de Midnight — aceita Olho de Cobra Enrolado (273062)",
+          "icone": "inv_firearm_2h_undergroundquest_b_01",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_undergroundquest_b_01.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_undergroundquest_b_01.jpg"
+        },
+        {
+          "id": 257747,
+          "nome_pt": "Olho de Lince do Contrabandista",
+          "nome_en": "Smuggler's Lynx Eye",
+          "slot": "mira de arma de longo alcance",
+          "efeito_pt": "Uso: Encanta permanentemente uma arma de longo alcance para aumentar em 15 de forma esporádica a Maestria.",
+          "origem": "Fabricado por Engenharia de Midnight (habilidade 70)",
+          "icone": "inv_10_engineering_scope_color2",
+          "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_10_engineering_scope_color2.jpg",
+          "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_10_engineering_scope_color2.jpg"
+        }
+      ],
+      "armas_de_fogo_nao_craftaveis_encontradas": [
+        {
+          "id": 268200,
+          "nome_pt": "Detonador Reserva de Gebbo",
+          "ilvl": 341,
+          "origem": "drop de Mor'zahi, Abismo Peçonhento (Ascendente Forjado com Peçonha: Mito)"
+        },
+        {
+          "id": 275223,
+          "nome_pt": "Lançador de Setas Fásicas",
+          "ilvl": 289,
+          "origem": "Mito 6/6 — saque"
+        },
+        {
+          "id": 263894,
+          "nome_pt": "Rifle Tocado pelo Caos",
+          "ilvl": 259,
+          "origem": "Herói 1/6 — saque"
+        },
+        {
+          "id": 237786,
+          "nome_pt": "Bacamarte do Pragalâmina do Ocaso",
+          "ilvl": 89,
+          "origem": "família Nightfall — BoP, fora do craft"
+        },
+        {
+          "id": 237788,
+          "nome_pt": "Escopeta do Andarilho das Sombras do Ocaso",
+          "origem": "família Nightfall — BoP, fora do craft"
+        }
+      ],
+      "resolucao_2026_11_06": "Seção Reagente para (3) do Olho de Cobra Enrolado (273062) raspada com sucesso via Firecrawl. Os 3 IDs confirmados são 268475, 268477 e 268479."
+    }
+  },
+  "alquimia": {
+    "nome_pt": "Alquimia (Alchemy)",
+    "berloques": [
+      {
+        "id": 241340,
+        "nome_pt": "Pedra do Alquimista do Magíster",
+        "nome_en": "Magister's Alchemist Stone",
+        "slot": "berloque",
+        "embelezado_embutido": true
+      }
+    ]
+  },
+  "slots_craftaveis_por_profissao": {
+    "ferraria": [
+      "cabeça",
+      "ombros",
+      "peitoral",
+      "pulsos",
+      "mãos",
+      "cinto",
+      "pernas",
+      "pés",
+      "escudo",
+      "armas 1M",
+      "armas 2M"
+    ],
+    "couraria": [
+      "cabeça",
+      "ombros",
+      "peitoral",
+      "pulsos",
+      "mãos",
+      "cinto",
+      "pernas",
+      "pés"
+    ],
+    "alfaiataria": [
+      "cabeça",
+      "ombros",
+      "peitoral",
+      "pulsos",
+      "mãos",
+      "cinto",
+      "pernas",
+      "pés",
+      "costas"
+    ],
+    "joalheria": [
+      "pescoço",
+      "anel"
+    ],
+    "escrivania": [
+      "cajado 2M",
+      "arco",
+      "mão secundária"
+    ],
+    "engenharia": [
+      "cabeça",
+      "pulsos",
+      "pés",
+      "arma de fogo"
+    ],
+    "alquimia": [
+      "berloque"
+    ]
+  }
+}

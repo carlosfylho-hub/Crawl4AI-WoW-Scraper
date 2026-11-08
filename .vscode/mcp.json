@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "crawl4ai-wow": {
+            "command": "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+            "args": [
+                "C:\\Users\\carlo\\Desktop\\Crawl4AI\\mcp_server.py"
+            ],
+            "cwd": "C:\\Users\\carlo\\Desktop\\Crawl4AI",
+            "env": {
+                "PYTHONIOENCODING": "utf-8",
+                "PYTHONPATH": "C:\\Users\\carlo\\Desktop\\Crawl4AI",
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}

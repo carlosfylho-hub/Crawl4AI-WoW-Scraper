@@ -1,0 +1,13 @@
+# =============================================================================
+# Dependências de desenvolvimento / teste
+#
+# Uso: pip install -r requirements-dev.txt
+#
+# `streamlit` NÃO é duplicado aqui: já consta em `requirements.txt`.
+# =============================================================================
+
+-r requirements.txt
+
+# Testes
+pytest>=8,<9
+pytest-asyncio>=0.23,<1

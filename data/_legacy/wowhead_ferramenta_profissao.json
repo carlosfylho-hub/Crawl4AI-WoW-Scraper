@@ -1,0 +1,20 @@
+[
+  {
+    "id": "12345",
+    "nome_ptbr": "Picareta Avancada de Mineração",
+    "tipo": "ferramenta_profissao",
+    "profissao": "mineração",
+    "atributos_secundarios": {
+      "Critico": "+50",
+      "Versatilidade": "+30"
+    },
+    "atributo_conferido": null,
+    "valor": null,
+    "atributo_adicionado": null,
+    "valor_base": null,
+    "qualidade": 5,
+    "item_level": 232,
+    "bonus_ids": [],
+    "url": null
+  }
+]

@@ -1,0 +1,609 @@
+#!/usr/bin/env python3
+"""
+Servidor MCP (Model Context Protocol) do Crawl4AI / WoW Season 2.
+
+Expõe ferramentas para qualquer cliente MCP (VS Code, Claude Desktop, Cursor,
+Antigravity, etc.):
+
+- scrape_pagina: raspa qualquer página, incluindo sites JavaScript/SPA.
+- scrape_wowhead_item: extrai um item do Wowhead em EN + PT-BR.
+- scrape_wowhead_items: extrai uma lista de URLs de itens.
+- listar_catalogo: consulta o catálogo consolidado salvo em data/.
+- recomendar_encantamento_gema: recomendações por classe/especialidade.
+- estado_dados: mostra quais arquivos/catálogos estão disponíveis.
+
+Transporte padrão: stdio (recomendado para clientes locais).
+Para HTTP/SSE, defina MCP_TRANSPORT=sse (quando suportado pelo SDK).
+"""
+
+from __future__ import annotations
+
+import asyncio
+import json
+import os
+import re
+import sys
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig
+from mcp.server.fastmcp import FastMCP
+
+from recomendacoes import gerar_recomendacoes
+from runtime import configurar_event_loop_windows
+from scraper_season2 import WowheadSeason2Scraper
+
+# Playwright precisa de ProactorEventLoop no Windows (centralizado em runtime.py).
+configurar_event_loop_windows()
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+ITENS_PATH = DATA_DIR / "wowhead_itens_season2.json"
+CATALOGO_PATH = DATA_DIR / "wowhead_catalogo.json"
+
+mcp = FastMCP(
+    "crawl4ai-wow",
+    instructions=(
+        "Ferramentas de scraping com Crawl4AI (Playwright) e extração "
+        "bilíngue EN/PT-BR de itens do World of Warcraft. Use scrape_pagina "
+        "para sites JavaScript e as ferramentas wowhead para itens "
+        "estruturados e recomendações."
+    ),
+)
+
+_JS_SCROLL = """
+(async () => {
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  for (let i = 0; i < 6; i++) {
+    window.scrollTo(0, document.body.scrollHeight);
+    await sleep(700);
+  }
+  window.scrollTo(0, 0);
+  await sleep(400);
+  return true;
+})();
+"""
+
+
+def _texto_markdown(result: Any) -> str:
+    md = getattr(result, "markdown", None)
+    if not md:
+        return ""
+    if isinstance(md, str):
+        return md
+    for atributo in ("raw_markdown", "fit_markdown", "markdown_with_citations"):
+        valor = getattr(md, atributo, None)
+        if valor:
+            return str(valor)
+    return str(md)
+
+
+def _imagens_media(result: Any, limite: int = 40) -> List[Dict[str, str]]:
+    media = getattr(result, "media", None)
+    if not isinstance(media, dict):
+        return []
+    imagens: List[Dict[str, str]] = []
+    for imagem in media.get("images") or []:
+        if isinstance(imagem, dict) and imagem.get("src"):
+            imagens.append(
+                {
+                    "src": str(imagem["src"]),
+                    "alt": str(imagem.get("alt") or ""),
+                }
+            )
+        if len(imagens) >= limite:
+            break
+    return imagens
+
+
+def _links(result: Any, limite: int = 50) -> Dict[str, List[str]]:
+    links = getattr(result, "links", None)
+    if not isinstance(links, dict):
+        return {"internos": [], "externos": []}
+
+    def _extrair(chave: str) -> List[str]:
+        valores = []
+        for link in links.get(chave) or []:
+            if isinstance(link, dict) and link.get("href"):
+                valores.append(str(link["href"]))
+            elif isinstance(link, str):
+                valores.append(link)
+            if len(valores) >= limite:
+                break
+        return valores
+
+    return {
+        "internos": _extrair("internal"),
+        "externos": _extrair("external"),
+    }
+
+
+def _base_config(headless: bool = True) -> BrowserConfig:
+    try:
+        return BrowserConfig(
+            headless=headless,
+            enable_stealth=True,
+            verbose=False,
+            browser_type="chromium",
+            viewport_width=1920,
+            viewport_height=1080,
+        )
+    except TypeError:
+        return BrowserConfig(
+            headless=headless,
+            verbose=False,
+            browser_type="chromium",
+            viewport_width=1920,
+            viewport_height=1080,
+        )
+
+
+async def scrape_pagina_impl(
+    url: str,
+    wait_for: str = "css:body",
+    usar_js: bool = True,
+    max_caracteres: int = 20000,
+    incluir_html: bool = False,
+) -> Dict[str, Any]:
+    """Implementação síncrona de scraping genérico (JS opcional)."""
+    kwargs: Dict[str, Any] = {
+        "cache_mode": CacheMode.BYPASS,
+        "wait_for": wait_for or "css:body",
+        "page_timeout": 60000,
+        "verbose": False,
+    }
+    if usar_js:
+        kwargs["js_code"] = _JS_SCROLL
+
+    try:
+        run_config = CrawlerRunConfig(**kwargs)
+    except TypeError:
+        kwargs.pop("js_code", None)
+        run_config = CrawlerRunConfig(**kwargs)
+
+    try:
+        async with AsyncWebCrawler(config=_base_config()) as crawler:
+            result = await crawler.arun(url=url, config=run_config)
+    except Exception as exc:  # noqa: BLE001
+        return {"sucesso": False, "url": url, "erro": f"exceção: {exc}"}
+
+    if not getattr(result, "success", False):
+        return {
+            "sucesso": False,
+            "url": url,
+            "erro": str(getattr(result, "error_message", "falha desconhecida")),
+        }
+
+    texto = _texto_markdown(result) or (getattr(result, "html", "") or "")
+    metadata = getattr(result, "metadata", None) or {}
+    titulo = metadata.get("title", "") if isinstance(metadata, dict) else ""
+
+    resposta: Dict[str, Any] = {
+        "sucesso": True,
+        "url": url,
+        "titulo": titulo,
+        "texto_markdown": texto[:max_caracteres],
+        "truncado": len(texto) > max_caracteres,
+        "imagens": _imagens_media(result),
+        "links": _links(result),
+    }
+    if incluir_html:
+        resposta["html"] = (getattr(result, "html", "") or "")[:max_caracteres]
+    return resposta
+
+
+def _normalizar_item_url(item: str) -> Optional[str]:
+    item = (item or "").strip()
+    if not item:
+        return None
+    if "item=" in item:
+        return item
+    if item.isdigit():
+        return f"https://www.wowhead.com/pt/item={item}"
+    return None
+
+
+async def scrape_wowhead_item_impl(
+    item: str,
+    buscar_ingles: bool = True,
+    qualidade_craft_min: int = 5,
+    exigir_craft: bool = False,
+) -> Dict[str, Any]:
+    """Implementação da extração de um item do Wowhead."""
+    url = _normalizar_item_url(item)
+    if not url:
+        return {
+            "sucesso": False,
+            "erro": "Informe um ID numérico ou uma URL com item=...",
+        }
+
+    async with WowheadSeason2Scraper(
+        ilvl_min=0,
+        ilvl_max=400,
+        qualidade_min=0,
+        qualidade_craft_min=qualidade_craft_min,
+        exigir_craft=exigir_craft,
+        incluir_sem_ilvl=True,
+        buscar_detalhes=True,
+        buscar_ingles=buscar_ingles,
+        gerar_markdown=False,
+        max_itens=1,
+        max_detalhes=1,
+        wait_for="css:body",
+    ) as scraper:
+        resultado = await scraper.executar([url])
+
+    itens = resultado.get("itens") or []
+    metadata = dict(resultado.get("metadata") or {})
+    metadata.setdefault("qualidade_craft_min", qualidade_craft_min)
+    metadata.setdefault("exigir_craft", exigir_craft)
+    if not itens:
+        return {
+            "sucesso": False,
+            "erro": "Item não extraído; verifique a URL/ID.",
+            "url": url,
+            "metadata": metadata,
+        }
+    return {
+        "sucesso": True,
+        "item": itens[0],
+        "metadata": metadata,
+    }
+
+
+async def scrape_wowhead_items_impl(
+    urls: List[str],
+    ilvl_min: int = 305,
+    ilvl_max: int = 350,
+    max_itens: int = 20,
+    buscar_detalhes: bool = True,
+    buscar_ingles: bool = True,
+    salvar: bool = False,
+    qualidade_craft_min: int = 5,
+    exigir_craft: bool = False,
+) -> Dict[str, Any]:
+    """Implementação da extração de vários itens/listas do Wowhead."""
+    urls = [url.strip() for url in (urls or []) if url and url.strip()]
+    if not urls:
+        return {"sucesso": False, "erro": "Lista de URLs vazia."}
+
+    async with WowheadSeason2Scraper(
+        ilvl_min=ilvl_min,
+        ilvl_max=ilvl_max,
+        qualidade_min=0,
+        qualidade_craft_min=qualidade_craft_min,
+        exigir_craft=exigir_craft,
+        incluir_sem_ilvl=True,
+        buscar_detalhes=buscar_detalhes,
+        buscar_ingles=buscar_ingles,
+        gerar_markdown=salvar,
+        max_itens=max_itens,
+        max_detalhes=max_itens if buscar_detalhes else 0,
+        wait_for="css:a[href*='item=']",
+    ) as scraper:
+        resultado = await scraper.executar_por_categorias({"MCP": urls})
+        if salvar:
+            scraper.salvar_resultados(
+                resultado,
+                str(DATA_DIR / "wowhead_itens_season2.json"),
+                str(DATA_DIR / "wowhead_season2.md"),
+            )
+
+    metadata = dict(resultado.get("metadata") or {})
+    metadata.setdefault("qualidade_craft_min", qualidade_craft_min)
+    metadata.setdefault("exigir_craft", exigir_craft)
+    return {
+        "sucesso": True,
+        "metadata": metadata,
+        "itens": resultado.get("itens") or [],
+    }
+
+
+def listar_catalogo_impl(
+    tipo: str = "", limite: int = 50
+) -> Dict[str, Any]:
+    """Implementação da consulta ao catálogo consolidado."""
+    if not CATALOGO_PATH.exists():
+        return {
+            "sucesso": False,
+            "erro": "Catálogo não encontrado.",
+            "fonte": str(CATALOGO_PATH),
+        }
+
+    try:
+        with open(CATALOGO_PATH, "r", encoding="utf-8") as f:
+            dados = json.load(f)
+    except Exception as exc:  # noqa: BLE001
+        return {
+            "sucesso": False,
+            "erro": f"Falha ao ler catálogo: {exc}",
+            "fonte": str(CATALOGO_PATH),
+        }
+
+    itens = dados.get("itens") or []
+    if tipo:
+        itens = [i for i in itens if i.get("tipo_item") == tipo]
+    return {
+        "sucesso": True,
+        "total": len(itens),
+        "itens": itens[: max(1, int(limite))],
+        "fonte": str(CATALOGO_PATH),
+    }
+
+
+def _carregar_itens(caminho: Path) -> List[Dict[str, Any]]:
+    if not caminho.exists():
+        return []
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            dados = json.load(f)
+        if isinstance(dados, list):
+            return dados
+        return dados.get("itens") or []
+    except Exception:
+        return []
+
+
+def recomendar_encantamento_gema_impl(
+    classe: str,
+    especialidade: str,
+    prioridade: Optional[List[str]] = None,
+    primario: str = "",
+    item_id: Optional[int] = None,
+    limite: int = 3,
+) -> Dict[str, Any]:
+    """Implementação das recomendações usando gear + catálogo salvos."""
+    gear = _carregar_itens(ITENS_PATH)
+    catalogo = _carregar_itens(CATALOGO_PATH)
+    if not catalogo:
+        return {
+            "sucesso": False,
+            "erro": "Catálogo indisponível.",
+            "fonte": str(CATALOGO_PATH),
+        }
+    if not gear:
+        return {
+            "sucesso": False,
+            "erro": "Itens de gear indisponíveis.",
+            "fonte": str(ITENS_PATH),
+        }
+
+    rec = gerar_recomendacoes(
+        gear + catalogo,
+        classe,
+        especialidade,
+        prioridade or ["Aceleração", "Crítico", "Maestria"],
+        primario_override=primario,
+        limite=limite,
+    )
+    if item_id is not None:
+        rec["itens"] = [i for i in rec["itens"] if i.get("id") == item_id]
+    rec["sucesso"] = True
+    rec["fontes"] = {"gear": str(ITENS_PATH), "catalogo": str(CATALOGO_PATH)}
+    return rec
+
+
+def estado_dados_impl() -> Dict[str, Any]:
+    """Mostra arquivos e contagens disponíveis para o agente."""
+    arquivos = {}
+    # Apenas dados canônicos. Legados vivem em data/_legacy/ e são contados.
+    for caminho in (
+        ITENS_PATH,
+        CATALOGO_PATH,
+        DATA_DIR / "wowhead_gemas.json",
+        DATA_DIR / "wowhead_encantamentos.json",
+        DATA_DIR / "wowhead_missivas.json",
+        DATA_DIR / "wowhead_season2.md",
+        DATA_DIR / "wowhead_catalogo.md",
+    ):
+        arquivos[caminho.name] = {
+            "existe": caminho.exists(),
+            "bytes": caminho.stat().st_size if caminho.exists() else 0,
+        }
+
+    itens = _carregar_itens(ITENS_PATH)
+    catalogo = _carregar_itens(CATALOGO_PATH)
+    tipos: Dict[str, int] = {}
+    for item in catalogo:
+        tipo = item.get("tipo_item") or "outro"
+        tipos[tipo] = tipos.get(tipo, 0) + 1
+
+    legacy_dir = DATA_DIR / "_legacy"
+    legados_json = (
+        sorted(p.name for p in legacy_dir.glob("*.json"))
+        if legacy_dir.exists()
+        else []
+    )
+
+    return {
+        "diretorio": str(BASE_DIR),
+        "arquivos": arquivos,
+        "gear_itens": len(itens),
+        "catalogo_itens": len(catalogo),
+        "catalogo_por_tipo": tipos,
+        "legados_dir": str(legacy_dir),
+        "legados_total": len(legados_json),
+        "legados_json": legados_json,
+    }
+
+
+# =============================================================================
+# Ferramentas MCP
+# =============================================================================
+
+@mcp.tool()
+async def scrape_pagina(
+    url: str,
+    wait_for: str = "css:body",
+    usar_js: bool = True,
+    max_caracteres: int = 20000,
+    incluir_html: bool = False,
+) -> Dict[str, Any]:
+    """Raspa uma página (inclusive JavaScript/SPA) e retorna Markdown/texto."""
+    return await scrape_pagina_impl(
+        url, wait_for, usar_js, max_caracteres, incluir_html
+    )
+
+
+@mcp.tool()
+async def scrape_wowhead_item(
+    item: str,
+    buscar_ingles: bool = True,
+    qualidade_craft_min: int = 5,
+    exigir_craft: bool = False,
+) -> Dict[str, Any]:
+    """Extrai um item do Wowhead (ID ou URL) com nome EN/PT-BR e atributos.
+
+    Args:
+        item: ID numérico ou URL contendo ``item=...``.
+        buscar_ingles: Também visita a página EN para o nome oficial em inglês.
+        qualidade_craft_min: Rank mínimo de qualidade de craft (R1–R5).
+            Itens craftados abaixo desse rank são descartados; ``0`` desativa
+            o filtro. O valor efetivo é ecoado em ``metadata``.
+        exigir_craft: Quando ``True``, exige item craftado no rank pedido
+            (descarta ``qualidade_craft=0``). Padrão ``False`` para consulta.
+    """
+    return await scrape_wowhead_item_impl(
+        item, buscar_ingles, qualidade_craft_min, exigir_craft
+    )
+
+
+@mcp.tool()
+async def scrape_wowhead_items(
+    urls: List[str],
+    ilvl_min: int = 305,
+    ilvl_max: int = 350,
+    max_itens: int = 20,
+    buscar_detalhes: bool = True,
+    buscar_ingles: bool = True,
+    salvar: bool = False,
+    qualidade_craft_min: int = 5,
+    exigir_craft: bool = False,
+) -> Dict[str, Any]:
+    """Extrai vários itens/listas do Wowhead e retorna JSON estruturado.
+
+    Args:
+        urls: URLs de listas/guias ou de itens individuais.
+        ilvl_min / ilvl_max: Faixa de item level aceita.
+        max_itens: Limite de itens retornados.
+        buscar_detalhes: Visita páginas individuais para atributos/ícones.
+        buscar_ingles: Também visita a página EN de cada item.
+        salvar: Persiste o resultado em ``data/``.
+        qualidade_craft_min: Rank mínimo de qualidade de craft (R1–R5).
+            Itens craftados abaixo desse rank são descartados; ``0`` desativa
+            o filtro. O valor efetivo é ecoado em ``metadata``.
+        exigir_craft: Quando ``True``, exige item craftado no rank pedido
+            (descarta ``qualidade_craft=0``). Padrão ``False`` para consulta.
+    """
+    return await scrape_wowhead_items_impl(
+        urls,
+        ilvl_min,
+        ilvl_max,
+        max_itens,
+        buscar_detalhes,
+        buscar_ingles,
+        salvar,
+        qualidade_craft_min,
+        exigir_craft,
+    )
+
+
+@mcp.tool()
+def listar_catalogo(tipo: str = "", limite: int = 50) -> Dict[str, Any]:
+    """Lista o catálogo consolidado, filtrando por tipo_item se informado."""
+    return listar_catalogo_impl(tipo, limite)
+
+
+@mcp.tool()
+def recomendar_encantamento_gema(
+    classe: str,
+    especialidade: str,
+    prioridade: Optional[List[str]] = None,
+    primario: str = "",
+    item_id: Optional[int] = None,
+    limite: int = 3,
+) -> Dict[str, Any]:
+    """Recomenda encantamento/gema por classe, especialidade e prioridade."""
+    return recomendar_encantamento_gema_impl(
+        classe, especialidade, prioridade, primario, item_id, limite
+    )
+
+
+@mcp.tool()
+def estado_dados() -> Dict[str, Any]:
+    """Informa arquivos e catálogos disponíveis para o agente."""
+    return estado_dados_impl()
+
+
+def _selftest() -> None:
+    print(
+        json.dumps(
+            {
+                "servidor": "crawl4ai-wow",
+                "estado": estado_dados_impl(),
+                "catalogo_amostra": listar_catalogo_impl(limite=3),
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
+
+
+def _print_config(formato: str = "roo") -> None:
+    """Emite o JSON de configuração local do servidor MCP.
+
+    Formatos:
+    - ``roo`` (padrão): ``{"mcpServers": {...}}`` — Roo Code, Cline, Claude,
+      Cursor, Windsurf. **Sem `cwd`**: o schema do Roo rejeita campos extras.
+    - ``vscode``: ``{"servers": {...}}`` com ``type: stdio`` e ``cwd``.
+    - ``bloco``: apenas o objeto ``command/args/cwd/env``.
+    """
+    servidor = {
+        "command": sys.executable,
+        "args": [str(BASE_DIR / "mcp_server.py")],
+        "env": {
+            "PYTHONIOENCODING": "utf-8",
+            "PYTHONPATH": str(BASE_DIR),
+            "MCP_TRANSPORT": os.getenv("MCP_TRANSPORT", "stdio"),
+        },
+    }
+
+    if formato == "vscode":
+        config = {
+            "servers": {
+                "crawl4ai-wow": {
+                    "type": "stdio",
+                    **servidor,
+                    "cwd": str(BASE_DIR),
+                }
+            }
+        }
+    elif formato == "bloco":
+        config = {**servidor, "cwd": str(BASE_DIR)}
+    else:
+        config = {
+            "mcpServers": {
+                "crawl4ai-wow": {
+                    **servidor,
+                    "alwaysAllow": ["estado_dados", "listar_catalogo"],
+                    "disabled": False,
+                }
+            }
+        }
+
+    print(json.dumps(config, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    _formato = "roo"
+    for _arg in sys.argv:
+        if _arg.startswith("--formato="):
+            _formato = _arg.split("=", 1)[1].strip()
+
+    if "--print-config" in sys.argv:
+        _print_config(_formato)
+    elif "--selftest" in sys.argv:
+        _selftest()
+    else:
+        transporte = os.getenv("MCP_TRANSPORT", "stdio")
+        mcp.run(transport=transporte)  # type: ignore[arg-type]

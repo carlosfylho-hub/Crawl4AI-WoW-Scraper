@@ -1,0 +1,27 @@
+# =============================================================================
+# Dependências de execução — pinos validados (Pacote 1)
+#
+# Ambiente de referência: Python 3.12.x · Crawl4AI 0.8.6 · Playwright 1.58.0
+#
+# Regra de atualização: só subir versão com `tests/test_contrato_crawl4ai.py`
+# verde E smoke real de 2 itens. Ver `docs/UPGRADE_CRAWL4AI.md`.
+# =============================================================================
+
+# Núcleo de scraping (pin exato: 0.8.6 trouxe breaking changes de assinatura
+# em JsonCssExtractionStrategy — exige `schema` posicional)
+crawl4ai==0.8.6
+
+# Navegador headless — deve casar com o Chromium esperado pelo crawl4ai 0.8.6
+playwright==1.58.0
+
+# LLM / MCP
+litellm>=1.0.0,<2
+mcp>=1.0.0,<2
+
+# Utilitários
+python-dotenv>=1.0.0,<2
+aiohttp>=3.9.0,<4
+beautifulsoup4>=4.12.0,<5
+pandas>=2.0.0,<3
+nest-asyncio>=1.5.0,<2
+streamlit>=1.30.0,<2

@@ -1,0 +1,819 @@
+{
+  "_meta": {
+    "documento": "craft_armas_s2.json",
+    "papel": "Catálogo das armas craftáveis da T2 com nome oficial PT-BR, tipo, nível e atributos.",
+    "patch": "12.1.5 — A Maldição de Ula'tek",
+    "fonte": "nether.wowhead.com/tooltip/item locale=8 (ptBR) e locale=0 (enUS)",
+    "descoberta": "Visões gerais de profissão do Wowhead (Ferraria, Escrivania) + tooltip oficial",
+    "gerado_em": "2026-11-05T21:05:55.849Z",
+    "script": "tools/auditar_armas_craft.js",
+    "total_armas": 29,
+    "atualizado": "2026-11-06"
+  },
+  "armas": {
+    "237831": {
+      "nome_pt": "Repreensão do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Rebuke",
+      "profissao": "Ferraria",
+      "familia": "Quebra-feitiço",
+      "tipo": "escudo",
+      "ilvl": 246,
+      "dano_por_segundo": null,
+      "atributos": [
+        "+42 Força",
+        "+127 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Repreensão do Quebra-feitiço\nNível do Item: 246\nVincula-se ao ser recolhidoMão SecundáriaEscudo751 Armadura\nBloqueio de 1877\n+42 Força\n+127 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 141 11 7",
+      "icone": "inv_shield_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_1h_questbloodelf_b_01.jpg"
+    },
+    "237837": {
+      "nome_pt": "Misericórdia do Andarilho",
+      "nome_en": "Farstrider's Mercy",
+      "profissao": "Ferraria",
+      "familia": "Andarilho",
+      "tipo": "adaga 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "46.9",
+      "atributos": [
+        "+42 Agilidade",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Misericórdia do Andarilho\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoAdaga\n    63 - 106 de Dano\n    Velocidade 1.80\n(46.9 de dano por segundo)\n+42 Agilidade\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 80 / 80Requer Nível 90\nPreço de Venda: 144 33 17",
+      "icone": "inv_knife_1h_questbloodelf_b_02",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_02.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_02.jpg"
+    },
+    "237838": {
+      "nome_pt": "Faca Ritualística do Magíster",
+      "nome_en": "Magister's Ritual Knife",
+      "profissao": "Ferraria",
+      "familia": "Magíster",
+      "tipo": "adaga 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "23.3",
+      "atributos": [
+        "+242 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Faca Ritualística do Magíster\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoAdaga\n    31 - 53 de Dano\n    Velocidade 1.80\n(23.3 de dano por segundo)\n+242 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 80 / 80Requer Nível 90\nPreço de Venda: 144 85 63",
+      "icone": "inv_knife_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_01.jpg"
+    },
+    "237839": {
+      "nome_pt": "Lâmina do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Blade",
+      "profissao": "Ferraria",
+      "familia": "Quebra-feitiço",
+      "tipo": "espada 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "47.1",
+      "atributos": [
+        "+42 [Agilidade ou Força]",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Lâmina do Quebra-feitiço\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoEspada\n    92 - 153 de Dano\n    Velocidade 2.60\n(47.1 de dano por segundo)\n+42 [Agilidade ou Força]\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 145 39 56",
+      "icone": "inv_sword_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_questbloodelf_b_01.jpg"
+    },
+    "237840": {
+      "nome_pt": "Glaive de Guerra do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Warglaive",
+      "profissao": "Ferraria",
+      "familia": "Quebra-feitiço",
+      "tipo": "glaive 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "47.1",
+      "atributos": [
+        "+200 Intelecto",
+        "+42 [Agilidade ou Intelecto]",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Glaive de Guerra do Quebra-feitiço\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoGlaive de Guerra\n    95 - 150 de Dano\n    Velocidade 2.60\n(47.1 de dano por segundo)\n+200 Intelecto\n+42 [Agilidade ou Intelecto]\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 145 93 49",
+      "icone": "inv_glaive_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_glaive_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_glaive_1h_questbloodelf_b_01.jpg"
+    },
+    "237841": {
+      "nome_pt": "Ultimato do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Ultimatum",
+      "profissao": "Ferraria",
+      "familia": "Quebra-feitiço",
+      "tipo": "maça 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "47.1",
+      "atributos": [
+        "+42 [Agilidade ou Força]",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Ultimato do Quebra-feitiço\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoMaça\n    107 - 138 de Dano\n    Velocidade 2.60\n(47.1 de dano por segundo)\n+42 [Agilidade ou Força]\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 146 45 95",
+      "icone": "inv_mace_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_mace_1h_questbloodelf_b_01.jpg"
+    },
+    "237842": {
+      "nome_pt": "Machadão de Floraforja",
+      "nome_en": "Bloomforged Greataxe",
+      "profissao": "Ferraria",
+      "familia": "Floraforja",
+      "tipo": "machado 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "62.5",
+      "atributos": [
+        "+83 [Agilidade ou Força]",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Machadão de Floraforja\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosMachado\n    146 - 304 de Dano\n    Velocidade 3.60\n(62.5 de dano por segundo)\n+83 [Agilidade ou Força]\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 183 74 85",
+      "icone": "inv_axe_2h_dungeonharronir_c_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_2h_dungeonharronir_c_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_2h_dungeonharronir_c_01.jpg"
+    },
+    "237843": {
+      "nome_pt": "Espada de Mana do Magíster",
+      "nome_en": "Magister's Mana Sword",
+      "profissao": "Ferraria",
+      "familia": "Magíster",
+      "tipo": "espada 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "23.7",
+      "atributos": [
+        "+242 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Espada de Mana do Magíster\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoEspada\n    46 - 77 de Dano\n    Velocidade 2.60\n(23.7 de dano por segundo)\n+242 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 147 53 81",
+      "icone": "inv_sword_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_1h_questbloodelf_b_01.jpg"
+    },
+    "237844": {
+      "nome_pt": "Cutelo do Magíster",
+      "nome_en": "Magister's Cleaver",
+      "profissao": "Ferraria",
+      "familia": "Magíster",
+      "tipo": "machado 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "23.5",
+      "atributos": [
+        "+242 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Cutelo do Magíster\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoMachado\n    39 - 83 de Dano\n    Velocidade 2.60\n(23.5 de dano por segundo)\n+242 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 148 7 73",
+      "icone": "inv_axe_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_1h_questbloodelf_b_01.jpg"
+    },
+    "237845": {
+      "nome_pt": "Garra de Floraforja",
+      "nome_en": "Bloomforged Claw",
+      "profissao": "Ferraria",
+      "familia": "Floraforja",
+      "tipo": "arma de punho 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "47.1",
+      "atributos": [
+        "+42 [Agilidade ou Força]",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Garra de Floraforja\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoArma de Punho\n    101 - 144 de Dano\n    Velocidade 2.60\n(47.1 de dano por segundo)\n+42 [Agilidade ou Força]\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 80 / 80Requer Nível 90\nPreço de Venda: 152 46 43",
+      "icone": "inv_hand_1h_dungeonharronir_c_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_hand_1h_dungeonharronir_c_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_hand_1h_dungeonharronir_c_01.jpg"
+    },
+    "237846": {
+      "nome_pt": "Lâmina de Guerra do Cavaleiro Sangrento",
+      "nome_en": "Blood Knight's Warblade",
+      "profissao": "Ferraria",
+      "familia": "Cavaleiro Sangrento",
+      "tipo": "espada 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "62.4",
+      "atributos": [
+        "+83 Força",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Lâmina de Guerra do Cavaleiro Sangrento\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosEspada\n    168 - 281 de Dano\n    Velocidade 3.60\n(62.4 de dano por segundo)\n+83 Força\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 191 25 44",
+      "icone": "inv_sword_2h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_2h_questbloodelf_b_01.jpg"
+    },
+    "237847": {
+      "nome_pt": "Ímpeto do Cavaleiro Sangrento",
+      "nome_en": "Blood Knight's Impetus",
+      "profissao": "Ferraria",
+      "familia": "Cavaleiro Sangrento",
+      "tipo": "alabarda 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "62.5",
+      "atributos": [
+        "+83 [Agilidade ou Força]",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Ímpeto do Cavaleiro Sangrento\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosArma de Haste\n    157 - 293 de Dano\n    Velocidade 3.60\n(62.5 de dano por segundo)\n+83 [Agilidade ou Força]\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 173 69 21",
+      "icone": "inv_polearm_2h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_polearm_2h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_polearm_2h_questbloodelf_b_01.jpg"
+    },
+    "237848": {
+      "nome_pt": "Misericórdia do Cavaleiro Sangrento",
+      "nome_en": "Blood Knight's Mercy",
+      "profissao": "Ferraria",
+      "familia": "Cavaleiro Sangrento",
+      "tipo": "maça 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "62.4",
+      "atributos": [
+        "+83 [Agilidade ou Força]",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Misericórdia do Cavaleiro Sangrento\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosMaça\n    196 - 253 de Dano\n    Velocidade 3.60\n(62.4 de dano por segundo)\n+83 [Agilidade ou Força]\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 174 36 62",
+      "icone": "mace_2h_blacksmithing_d_04_icon",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/mace_2h_blacksmithing_d_04_icon.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/mace_2h_blacksmithing_d_04_icon.jpg"
+    },
+    "237849": {
+      "nome_pt": "Despedida do Magíster",
+      "nome_en": "Magister's Valediction",
+      "profissao": "Ferraria",
+      "familia": "Magíster",
+      "tipo": "maça 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "31.3",
+      "atributos": [
+        "+369 Intelecto",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Despedida do Magíster\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosMaça\n    98 - 127 de Dano\n    Velocidade 3.60\n(31.3 de dano por segundo)\n+369 Intelecto\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 175 2 20",
+      "icone": "mace_2h_blacksmithing_d_04_icon",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/mace_2h_blacksmithing_d_04_icon.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/mace_2h_blacksmithing_d_04_icon.jpg"
+    },
+    "237850": {
+      "nome_pt": "Picador do Andarilho",
+      "nome_en": "Farstrider's Chopper",
+      "profissao": "Ferraria",
+      "familia": "Andarilho",
+      "tipo": "machado 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "47.1",
+      "atributos": [
+        "+42 [Agilidade ou Força]",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Picador do Andarilho\nNível do Item: 246\nVincula-se ao ser recolhidoUma MãoMachado\n    79 - 166 de Dano\n    Velocidade 2.60\n(47.1 de dano por segundo)\n+42 [Agilidade ou Força]\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 140 55 69",
+      "icone": "inv_axe_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_1h_questbloodelf_b_01.jpg"
+    },
+    "237909": {
+      "nome_pt": "Picareta do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Pickaxe",
+      "profissao": "Ferraria (PvP)",
+      "familia": "Competidor Talassiano",
+      "tipo": "machado 1M",
+      "ilvl": 263,
+      "dano_por_segundo": "55.2",
+      "atributos": [
+        "+49 Agilidade",
+        "+847 Vigor",
+        "+36 Atributo Aleatório 1",
+        "+36 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Picareta do Competidor Talassiano\nNível do Item: 263\nVincula-se quando equipadoUma MãoMachado\n    93 - 194 de Dano\n    Velocidade 2.60\n(55.2 de dano por segundo)\n+49 Agilidade\n+847 Vigor\n+36 Atributo Aleatório 1\n+36 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nEquipar: aumenta o nível do item para um mínimo de 263 em Arenas, Campos de Batalha e no Modo de Guerra.\nPreço de Venda: 16 25",
+      "icone": "inv_axe_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_axe_1h_questbloodelf_b_01.jpg"
+    },
+    "237910": {
+      "nome_pt": "Faca do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Knife",
+      "profissao": "Ferraria (PvP)",
+      "familia": "Competidor Talassiano",
+      "tipo": "adaga 1M",
+      "ilvl": 263,
+      "dano_por_segundo": "55.0",
+      "atributos": [
+        "+49 Agilidade",
+        "+847 Vigor",
+        "+36 Atributo Aleatório 1",
+        "+36 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Faca do Competidor Talassiano\nNível do Item: 263\nVincula-se quando equipadoUma MãoAdaga\n    74 - 124 de Dano\n    Velocidade 1.80\n(55.0 de dano por segundo)\n+49 Agilidade\n+847 Vigor\n+36 Atributo Aleatório 1\n+36 Atributo Aleatório 2\nDurabilidade 80 / 80Requer Nível 90\nEquipar: aumenta o nível do item para um mínimo de 263 em Arenas, Campos de Batalha e no Modo de Guerra.\nPreço de Venda: 15 35",
+      "icone": "inv_knife_1h_questbloodelf_b_02",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_02.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_02.jpg"
+    },
+    "237911": {
+      "nome_pt": "Máxima do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Maxim",
+      "profissao": "Ferraria (PvP)",
+      "familia": "Competidor Talassiano",
+      "tipo": "maça 1M",
+      "ilvl": 263,
+      "dano_por_segundo": "27.5",
+      "atributos": [
+        "+283 Intelecto",
+        "+847 Vigor",
+        "+36 Atributo Aleatório 1",
+        "+36 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Máxima do Competidor Talassiano\nNível do Item: 263\nVincula-se quando equipadoUma MãoMaça\n    62 - 81 de Dano\n    Velocidade 2.60\n(27.5 de dano por segundo)\n+283 Intelecto\n+847 Vigor\n+36 Atributo Aleatório 1\n+36 Atributo Aleatório 2\nDurabilidade 75 / 75Requer Nível 90\nEquipar: aumenta o nível do item para um mínimo de 263 em Arenas, Campos de Batalha e no Modo de Guerra.\nPreço de Venda: 16 25",
+      "icone": "inv_mace_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_mace_1h_questbloodelf_b_01.jpg"
+    },
+    "237912": {
+      "nome_pt": "Baluarte do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Bulwark",
+      "profissao": "Ferraria (PvP)",
+      "familia": "Competidor Talassiano",
+      "tipo": "escudo",
+      "ilvl": 263,
+      "dano_por_segundo": null,
+      "atributos": [
+        "+49 Força",
+        "+149 Intelecto",
+        "+847 Vigor",
+        "+36 Atributo Aleatório 1",
+        "+36 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Baluarte do Competidor Talassiano\nNível do Item: 263\nVincula-se quando equipadoMão SecundáriaEscudo821 Armadura\nBloqueio de 2052\n+49 Força\n+149 Intelecto\n+847 Vigor\n+36 Atributo Aleatório 1\n+36 Atributo Aleatório 2\nDurabilidade 85 / 85Requer Nível 90\nEquipar: aumenta o nível do item para um mínimo de 263 em Arenas, Campos de Batalha e no Modo de Guerra.\nPreço de Venda: 16 25",
+      "icone": "inv_shield_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_1h_questbloodelf_b_01.jpg"
+    },
+    "237915": {
+      "nome_pt": "Montante do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Greatsword",
+      "profissao": "Ferraria (PvP)",
+      "familia": "Competidor Talassiano",
+      "tipo": "espada 2M",
+      "ilvl": 263,
+      "dano_por_segundo": "73.2",
+      "atributos": [
+        "+97 Força",
+        "+1.694 Vigor",
+        "+72 Atributo Aleatório 1",
+        "+72 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Montante do Competidor Talassiano\nNível do Item: 263\nVincula-se quando equipadoDuas mãosEspada\n    197 - 330 de Dano\n    Velocidade 3.60\n(73.2 de dano por segundo)\n+97 Força\n+1.694 Vigor\n+72 Atributo Aleatório 1\n+72 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nEquipar: aumenta o nível do item para um mínimo de 263 em Arenas, Campos de Batalha e no Modo de Guerra.\nPreço de Venda: 16 25",
+      "icone": "inv_sword_2h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_2h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_sword_2h_questbloodelf_b_01.jpg"
+    },
+    "244178": {
+      "nome_pt": "Varinha do Tecencantos Talassiano",
+      "nome_en": "Thalassian Spellweaver's Wand",
+      "profissao": "Encantamento",
+      "familia": "Talassiana",
+      "tipo": "varinha",
+      "ilvl": 201,
+      "dano_por_segundo": "15.5",
+      "atributos": [
+        "+159 Intelecto",
+        "+390 Vigor",
+        "+23 Atributo Aleatório 1",
+        "+23 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Varinha do Tecencantos Talassiano\nNível do Item: 201\nVincula-se quando equipadoLongo alcanceVarinha\n    23 - 39 Sombra de Dano\n    Velocidade 2.00\n(15.5 de dano por segundo)\n+159 Intelecto\n+390 Vigor\n+23 Atributo Aleatório 1\n+23 Atributo Aleatório 2\nDurabilidade 90 / 90Requer Nível 90\nPreço de Venda: 13 95",
+      "icone": "inv_wand_1h_outdoorvoidelf_c_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_1h_outdoorvoidelf_c_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_wand_1h_outdoorvoidelf_c_01.jpg"
+    },
+    "244179": {
+      "nome_pt": "Grande Foco do Magíster",
+      "nome_en": "Magister's Grand Focus",
+      "profissao": "Encantamento",
+      "familia": "Magíster",
+      "tipo": "não classificado",
+      "ilvl": 246,
+      "dano_por_segundo": "23.5",
+      "atributos": [
+        "+242 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Grande Foco do Magíster\nNível do Item: 246\nVincula-se ao ser recolhidoLongo alcanceVarinha\n    35 - 59 Fogo de Dano\n    Velocidade 2.00\n(23.5 de dano por segundo)\n+242 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 110 / 110Requer Nível 90\nPreço de Venda: 177 39 4",
+      "icone": "inv_wand_24",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_24.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_wand_24.jpg"
+    },
+    "244472": {
+      "nome_pt": "Paliçada do Cavaleiro Comandante",
+      "nome_en": "Knight-Commander's Palisade",
+      "profissao": "Ferraria",
+      "familia": "Cavaleiro Comandante",
+      "tipo": "escudo",
+      "ilvl": 246,
+      "dano_por_segundo": null,
+      "atributos": [
+        "+42 Força",
+        "+127 Intelecto",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": true,
+      "texto_pt": "Paliçada do Cavaleiro Comandante\nNível do Item: 246\nVincula-se ao ser recolhido\nÚnico-equipado: Embelezado (2)Mão SecundáriaEscudo751 Armadura\nBloqueio de 1877\n+42 Força\n+127 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 120 / 120Equipar: A luz protege. Há uma chance de, quando for atacado, você ganhar a Proteção da Paliçada, que concede um escudo que absorve 1192 de dano e dura 6 s. \nCaso o escudo seja quebrado antes de expirar, a magia do escudo estoura, lançando uma Penitência da Paliçada que causa (1 * 1192) de dano Sagrado aos inimigos próximos.\nRequer Nível 90\nPreço de Venda: 135 19 89",
+      "icone": "inv_shield_1h_questbloodelf_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_1h_questbloodelf_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_1h_questbloodelf_b_01.jpg"
+    },
+    "244679": {
+      "nome_pt": "Anzol da Travessa do Assassino",
+      "nome_en": "Murder Row Fishhook",
+      "profissao": "Ferraria",
+      "familia": "Travessa do Assassino",
+      "tipo": "adaga 1M",
+      "ilvl": 246,
+      "dano_por_segundo": "46.9",
+      "atributos": [
+        "+42 Agilidade",
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": true,
+      "texto_pt": "Anzol da Travessa do Assassino\nNível do Item: 246\nVincula-se ao ser recolhido\nÚnico-equipado: Embelezado (2)Uma MãoAdaga\n    63 - 106 de Dano\n    Velocidade 1.80\n(46.9 de dano por segundo)\n+42 Agilidade\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2\nDurabilidade 80 / 80Equipar: Suas habilidades e feitiços nocivos têm chance de fazer seu alvo sangrar, causando (1 * 846) de dano Físico a cada 2 por 10 s.\nRequer Nível 90\nPreço de Venda: 135 72 71",
+      "icone": "inv_knife_1h_questbloodelf_b_02",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_knife_1h_questbloodelf_b_02.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_knife_1h_questbloodelf_b_02.jpg"
+    },
+    "245769": {
+      "nome_pt": "Lanterna de Aln'hara",
+      "nome_en": "Aln'hara Lantern",
+      "profissao": "Escrivania",
+      "familia": "Aln'hara",
+      "tipo": "mão secundária",
+      "ilvl": 246,
+      "dano_por_segundo": null,
+      "atributos": [
+        "+692 Vigor",
+        "+32 Atributo Aleatório 1",
+        "+32 Atributo Aleatório 2Requer Nível 90"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Lanterna de Aln'hara\nNível do Item: 246\nVincula-se ao ser recolhidoEmpunhado na mão secundária+127 Intelecto\n+692 Vigor\n+32 Atributo Aleatório 1\n+32 Atributo Aleatório 2Requer Nível 90\nPreço de Venda: 203 65 32",
+      "icone": "inv_offhand_1h_dungeonharronir_c_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_dungeonharronir_c_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_offhand_1h_dungeonharronir_c_01.jpg"
+    },
+    "245771": {
+      "nome_pt": "Cajado-pique de Aln'hara",
+      "nome_en": "Aln'hara Pikestaff",
+      "profissao": "Escrivania",
+      "familia": "Aln'hara",
+      "tipo": "cajado 2M",
+      "ilvl": 246,
+      "dano_por_segundo": "62.5",
+      "atributos": [
+        "+83 Agilidade",
+        "+1.385 Vigor",
+        "+65 Atributo Aleatório 1",
+        "+65 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "texto_pt": "Cajado-pique de Aln'hara\nNível do Item: 246\nVincula-se ao ser recolhidoDuas mãosCajado\n    191 - 259 de Dano\n    Velocidade 3.60\n(62.5 de dano por segundo)\n+83 Agilidade\n+1.385 Vigor\n+65 Atributo Aleatório 1\n+65 Atributo Aleatório 2\nDurabilidade 120 / 120Requer Nível 90\nPreço de Venda: 170 97 93",
+      "icone": "inv_staff_2h_dungeonharronir_c_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_dungeonharronir_c_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_staff_2h_dungeonharronir_c_01.jpg"
+    },
+    "268475": {
+      "nome_pt": "Quebra-coco Evinúcleo",
+      "nome_en": "Evercore Dome Dinger",
+      "profissao": "Engenharia",
+      "familia": "Evinúcleo (Evercore)",
+      "tipo": "longo alcance (arma de fogo)",
+      "ilvl": 201,
+      "dano_por_segundo": 41,
+      "atributos": [
+        "+55 Agilidade",
+        "+781 Vigor",
+        "+83 Atributo Aleatório 1"
+      ],
+      "embelezado_embutido": false,
+      "receita_spell": 1282455,
+      "nota": "Fabricado por Engenharia (35). Aceita Olho de Cobra Enrolado (273062).",
+      "icone": "inv_firearm_2h_engineering_c_01_blue",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_engineering_c_01_blue.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_engineering_c_01_blue.jpg"
+    },
+    "268477": {
+      "nome_pt": "P.O.U. x3",
+      "nome_en": "P.O.U. x3",
+      "profissao": "Engenharia",
+      "familia": "Engenharia de Midnight (Épica)",
+      "tipo": "longo alcance (arma de fogo)",
+      "ilvl": 246,
+      "dano_por_segundo": 73.2,
+      "atributos": [
+        "+83 Agilidade",
+        "+1.385 Vigor",
+        "+130 Atributo Aleatório 1"
+      ],
+      "embelezado_embutido": false,
+      "receita_spell": 1282456,
+      "nota": "Fabricado por Engenharia (90). Arma com Centelha (Spark), sobe até 331 com cristas míticas. Aceita Olho de Cobra Enrolado (273062).",
+      "icone": "inv_firearm_2h_raidmidnight_d_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_raidmidnight_d_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_raidmidnight_d_01.jpg"
+    },
+    "268479": {
+      "nome_pt": "Rifle do Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's Rifle",
+      "profissao": "Engenharia",
+      "familia": "Competidor Talassiano (Thalassian Competitor's)",
+      "tipo": "longo alcance (arma de fogo)",
+      "ilvl": 263,
+      "dano_por_segundo": 73.2,
+      "atributos": [
+        "+97 Agilidade",
+        "+1.694 Vigor",
+        "+72 Atributo Aleatório 1",
+        "+72 Atributo Aleatório 2"
+      ],
+      "embelezado_embutido": false,
+      "receita_spell": 1282457,
+      "nota": "Fabricado por Engenharia (60). Arma de PvP com escala para 263 em combate JxJ. Aceita Olho de Cobra Enrolado (273062).",
+      "icone": "inv_firearm_2h_undergroundquest_b_01",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_firearm_2h_undergroundquest_b_01.jpg",
+      "icone_url_media": "https://wow.zamimg.com/images/wow/icons/medium/inv_firearm_2h_undergroundquest_b_01.jpg"
+    }
+  },
+  "familias_ptbr_confirmadas_2026_11_06": {
+    "_meta": {
+      "fonte": "nether.wowhead.com/tooltip/item locale=8 (PT-BR) e locale=0 (EN), varredura de faixa por tools/varrer_armas.js e tools/listar_faixa.js",
+      "o_que_resolve": "Fecha a pendência 3.10/3.12: as famílias Blood-Tempered, Dawnforged, Primalforged e Thalassian Competitor's agora têm ID e nome oficial PT-BR. Nenhum nome foi traduzido à mão.",
+      "aviso": "Estas peças são o craft de ENTRADA da profissão (ilvl 165-263, 'Vincula-se quando equipado'), NÃO o craft com Centelha de Marés (246 → 331). Não confundir com as 26 armas de 'armas'."
+    },
+    "blood_tempered": {
+      "nome_pt": "Temperado em Sangue",
+      "nome_en": "Blood-Tempered",
+      "profissao": "Ferraria",
+      "armas": {
+        "237920": {
+          "nome_pt": "Baluarte Temperado em Sangue",
+          "nome_en": "Blood-Tempered Bulwark",
+          "tipo": "escudo",
+          "ilvl": 201,
+          "armadura": 532,
+          "bloqueio": 1330,
+          "atributos": [
+            "+27 Força",
+            "+84 Intelecto",
+            "+390 Vigor",
+            "+23 Atributo Aleatório 1",
+            "+23 Atributo Aleatório 2"
+          ]
+        }
+      },
+      "armaduras_confirmadas_por_nome_en": {
+        "237917": "Blood-Tempered Greaves (Grevas Temperadas em Sangue, ilvl 165)",
+        "237918": "Blood-Tempered Chestplate",
+        "237919": "Blood-Tempered Greatbelt",
+        "237921": "Blood-Tempered Basinet",
+        "237922": "Blood-Tempered Leggings",
+        "237923": "Blood-Tempered Bracers",
+        "237924": "Blood-Tempered Pauldrons",
+        "237925": "Blood-Tempered Gauntlets"
+      }
+    },
+    "dawnforged": {
+      "nome_pt": "Albaforjado",
+      "nome_en": "Dawnforged",
+      "profissao": "Ferraria",
+      "ilvl": 201,
+      "armas": {
+        "237926": {
+          "nome_pt": "Faca Ritualística Albaforjada",
+          "nome_en": "Dawnforged Ritual Knife",
+          "tipo": "adaga 1M",
+          "dps": "15.3",
+          "atributos": [
+            "+159 Intelecto",
+            "+390 Vigor"
+          ]
+        },
+        "237927": {
+          "nome_pt": "Gume Albaforjado",
+          "nome_en": "Dawnforged Edge",
+          "tipo": "adaga 1M",
+          "dps": "30.8",
+          "atributos": [
+            "+27 Agilidade",
+            "+390 Vigor"
+          ]
+        },
+        "237928": {
+          "nome_pt": "Lâmina Longa Albaforjada",
+          "nome_en": "Dawnforged Long Blade",
+          "tipo": "espada 1M",
+          "dps": "31.0",
+          "atributos": [
+            "+27 [Agilidade ou Força]",
+            "+390 Vigor"
+          ]
+        },
+        "237930": {
+          "nome_pt": "Maça de Guerra Albaforjada",
+          "nome_en": "Dawnforged War Mace",
+          "tipo": "maça 2M",
+          "dps": "41.0",
+          "atributos": [
+            "+55 [Agilidade ou Força]",
+            "+781 Vigor"
+          ]
+        },
+        "237931": {
+          "nome_pt": "Divisor Albaforjado",
+          "nome_en": "Dawnforged Splitter",
+          "tipo": "machado 1M",
+          "dps": "31.0",
+          "atributos": [
+            "+27 [Agilidade ou Força]",
+            "+390 Vigor"
+          ]
+        }
+      }
+    },
+    "primalforged": {
+      "nome_pt": "Primeforjado",
+      "nome_en": "Primalforged",
+      "profissao": "Ferraria",
+      "ilvl": 201,
+      "armas": {
+        "237929": {
+          "nome_pt": "Soqueiras Primeforjadas",
+          "nome_en": "Primalforged Knuckles",
+          "tipo": "punho 1M",
+          "dps": "31.0",
+          "atributos": [
+            "+27 [Agilidade ou Força]",
+            "+390 Vigor"
+          ]
+        },
+        "237932": {
+          "nome_pt": "Machado Pesado Primeforjado",
+          "nome_en": "Primalforged Heavy Axe",
+          "tipo": "machado 2M",
+          "dps": "41.1",
+          "atributos": [
+            "+55 [Agilidade ou Força]",
+            "+781 Vigor"
+          ]
+        }
+      }
+    },
+    "thalassian_competitor": {
+      "nome_pt": "Competidor Talassiano",
+      "nome_en": "Thalassian Competitor's",
+      "profissao": "Ferraria",
+      "ilvl": 263,
+      "regra": "Sobe para no mínimo 263 em Arenas, Campos de Batalha e no Modo de Guerra (linha 'Equipar' do tooltip).",
+      "armas": {
+        "237909": {
+          "nome_pt": "Picareta do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Pickaxe",
+          "tipo": "machado 1M",
+          "atributos": [
+            "+49 Agilidade",
+            "+847 Vigor"
+          ]
+        },
+        "237910": {
+          "nome_pt": "Faca do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Knife",
+          "tipo": "adaga 1M",
+          "atributos": [
+            "+49 Agilidade",
+            "+847 Vigor"
+          ]
+        },
+        "237911": {
+          "nome_pt": "Máxima do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Maxim",
+          "tipo": "maça 1M",
+          "atributos": [
+            "+283 Intelecto",
+            "+847 Vigor"
+          ]
+        },
+        "237912": {
+          "nome_pt": "Baluarte do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Bulwark",
+          "tipo": "escudo",
+          "armadura": 821,
+          "bloqueio": 2052,
+          "atributos": [
+            "+49 Força",
+            "+149 Intelecto",
+            "+847 Vigor"
+          ]
+        },
+        "237913": {
+          "nome_pt": "Talhadeira do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Splitter",
+          "tipo": "machado 1M",
+          "atributos": [
+            "+49 Força",
+            "+847 Vigor"
+          ]
+        },
+        "237914": {
+          "nome_pt": "Espeto do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Skewer",
+          "tipo": "adaga 1M",
+          "atributos": [
+            "+283 Intelecto",
+            "+847 Vigor"
+          ]
+        },
+        "237915": {
+          "nome_pt": "Montante do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Greatsword",
+          "tipo": "espada 2M",
+          "atributos": [
+            "+97 Força",
+            "+1.694 Vigor"
+          ]
+        },
+        "237916": {
+          "nome_pt": "Espada do Competidor Talassiano",
+          "nome_en": "Thalassian Competitor's Sword",
+          "tipo": "espada 1M",
+          "atributos": [
+            "+49 Força",
+            "+847 Vigor"
+          ]
+        }
+      }
+    },
+    "nightfall_nao_craft": {
+      "nome_pt": "do Ocaso",
+      "nome_en": "Nightfall",
+      "por_que_esta_aqui": "A varredura trouxe a família junto. É a única família da faixa com ARMAS DE FOGO, e o tooltip diz 'Vincula-se ao ser recolhido' (BoP) — ou seja, NÃO é craft.",
+      "armas_de_fogo": {
+        "237786": "Bacamarte do Pragalâmina do Ocaso / Nightfall Curseblade's Blunderbuss",
+        "237788": "Escopeta do Andarilho das Sombras do Ocaso / Nightfall Shadowalker's Shotgun"
+      }
+    },
+    "Courtly": "Cortesão (IDs 239668–239676 confirmados em Alfaiataria)"
+  },
+  "falhas": []
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-06T09:45:29.764723",
+    "versao_scraper": "2.1.0-season2",
+    "ilvl_min": 305,
+    "ilvl_max": 350,
+    "qualidade_min": 3,
+    "qualidade_craft_min": 5,
+    "total_itens": 0,
+    "total_brutos": 20,
+    "total_brutos_antes_dedupe": 192,
+    "detalhados": 0,
+    "max_detalhes": 0,
+    "ilvl_origem": {},
+    "descartes": {
+      "ilvl_fora": 0,
+      "ilvl_adiado": 0,
+      "sem_ilvl": 0,
+      "qualidade": 0,
+      "slot": 0,
+      "profissao": 0,
+      "tipo": 20,
+      "qualidade_craft": 0
+    },
+    "categorias": {
+      "Geral": 1
+    },
+    "filtros": {
+      "slots": [],
+      "profissoes": [],
+      "buscar_detalhes": false,
+      "buscar_ingles": true
+    },
+    "avisos_catalogo": [],
+    "arquivo_markdown": "",
+    "tentativas_wait": 1,
+    "retry_scroll_usado": false,
+    "circuit_breaker": {
+      "falhas_consecutivas": 0,
+      "limite": 5,
+      "pausa_segundos": 60.0,
+      "pausas": 0,
+      "pausa_realizada": false,
+      "abortado": false,
+      "motivo": ""
+    },
+    "falhas": []
+  },
+  "itens": []
+}

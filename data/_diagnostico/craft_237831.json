@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-11-06T13:02:20.167103",
+  "ids_solicitados": [
+    "237831"
+  ],
+  "qualidade_craft_min": 5,
+  "bonus_por_id": {
+    "273796": [
+      "12856"
+    ],
+    "159459": [
+      "12856"
+    ],
+    "251190": [
+      "12856"
+    ],
+    "193763": [
+      "12856"
+    ],
+    "162544": [
+      "12856"
+    ],
+    "251148": [
+      "12856"
+    ],
+    "158366": [
+      "12856"
+    ],
+    "273792": [
+      "12856"
+    ],
+    "251234": [
+      "12856"
+    ],
+    "273797": [
+      "12856"
+    ],
+    "273781": [
+      "12856"
+    ],
+    "251173": [
+      "12856"
+    ],
+    "159288": [
+      "12856"
+    ],
+    "251132": [
+      "12856"
+    ],
+    "273794": [
+      "12856"
+    ],
+    "273795": [
+      "12856"
+    ],
+    "251142": [
+      "12856"
+    ],
+    "252258": [
+      "12856"
+    ],
+    "251136": [
+      "12856"
+    ],
+    "251194": [
+      "12856"
+    ]
+  },
+  "bonus_padrao": "12856",
+  "urls": [
+    "https://www.wowhead.com/pt/item=237831?bonus=12856"
+  ],
+  "itens": [
+    {
+      "id": 237831,
+      "nome_ptbr": "Repreensão do Quebra-feitiço",
+      "nome_en": "",
+      "qualidade": 4,
+      "qualidade_craft": 5,
+      "qualidade_craft_fonte": "url:crafting-quality",
+      "motivo_qualidade_craft": "url:crafting-quality",
+      "profissao_craft": "Ferraria",
+      "profissao_craft_fonte": "texto",
+      "craft_indicio": "profissao:texto; qualidade_craft:url:crafting-quality",
+      "item_level": 341,
+      "bonus_ids": [
+        "12856"
+      ],
+      "ilvl_origem": "pagina"
+    }
+  ],
+  "faltantes": [],
+  "metadata": {
+    "total_itens": 1,
+    "total_brutos": 1,
+    "descartes": {
+      "ilvl_fora": 0,
+      "ilvl_adiado": 1,
+      "sem_ilvl": 0,
+      "qualidade": 0,
+      "slot": 0,
+      "profissao": 0,
+      "tipo": 0,
+      "qualidade_craft": 0,
+      "sem_craft": 0
+    },
+    "falhas": []
+  }
+}

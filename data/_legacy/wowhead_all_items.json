@@ -1,0 +1,50 @@
+[
+  {
+    "id": "12345",
+    "nome_ptbr": "Picareta Avancada de Mineração",
+    "tipo": "ferramenta_profissao",
+    "profissao": "mineração",
+    "atributos_secundarios": {
+      "Critico": "+50",
+      "Versatilidade": "+30"
+    },
+    "atributo_conferido": null,
+    "valor": null,
+    "atributo_adicionado": null,
+    "valor_base": null,
+    "qualidade": 5,
+    "item_level": 232,
+    "bonus_ids": [],
+    "url": null
+  },
+  {
+    "id": "67890",
+    "nome_ptbr": "Encantamento de Intelecto Poderoso",
+    "tipo": "encantamento",
+    "profissao": null,
+    "atributos_secundarios": null,
+    "atributo_conferido": "Intelecto",
+    "valor": "+100",
+    "atributo_adicionado": null,
+    "valor_base": null,
+    "qualidade": 5,
+    "item_level": 255,
+    "bonus_ids": [],
+    "url": null
+  },
+  {
+    "id": "54321",
+    "nome_ptbr": "Missiva de Critico",
+    "tipo": "missiva",
+    "profissao": null,
+    "atributos_secundarios": null,
+    "atributo_conferido": null,
+    "valor": null,
+    "atributo_adicionado": "Critico",
+    "valor_base": "+75",
+    "qualidade": 5,
+    "item_level": 250,
+    "bonus_ids": [],
+    "url": null
+  }
+]

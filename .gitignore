@@ -1,0 +1,19 @@
+# Segredos locais (nunca versionar)
+.env
+.roo/
+.roo/mcp.json
+
+# Ambiente virtual e caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Artefatos locais
+data/_cache/
+data/_diagnostico/_listagem.html
+*.log
+log.txt

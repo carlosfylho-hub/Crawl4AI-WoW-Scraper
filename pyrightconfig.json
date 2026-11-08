@@ -1,0 +1,11 @@
+{
+    "exclude": [
+        "legacy",
+        "data",
+        ".venv",
+        "**/__pycache__"
+    ],
+    "ignore": [
+        "legacy"
+    ]
+}

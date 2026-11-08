@@ -1,0 +1,74 @@
+[
+  {
+    "id_item_completo": "item=244025&ilvl=27",
+    "nome_ptbr": "Encantamento da Engenhosidade Ren'dorei - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Engenhosidade",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=244025/encantamento-da-engenhosidade-rendorei-ferramenta"
+  },
+  {
+    "id_item_completo": "item=243995&ilvl=27",
+    "nome_ptbr": "Encantamento de Multicriação Haranir - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Multicriação",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=243995/encantamento-de-multicriação-haranir-ferramenta"
+  },
+  {
+    "id_item_completo": "item=244023&ilvl=27",
+    "nome_ptbr": "Encantamento de Destreza Sin'dorei - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Destreza",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=244023/encantamento-de-destreza-sindorei-ferramenta"
+  },
+  {
+    "id_item_completo": "item=243993&ilvl=27",
+    "nome_ptbr": "Encantamento de Finesse Haranir - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Finesse",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=243993/encantamento-de-finesse-haranir-ferramenta"
+  },
+  {
+    "id_item_completo": "item=243965&ilvl=27",
+    "nome_ptbr": "Encantamento de Percepção Amani - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Percepção",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=243965/encantamento-de-percepção-amani-ferramenta"
+  },
+  {
+    "id_item_completo": "item=243967&ilvl=27",
+    "nome_ptbr": "Encantamento de Desenvoltura Amani - Ferramenta",
+    "profissao": "Encantamento",
+    "qualidade": "Raro",
+    "item_level": 27,
+    "rank": 2,
+    "atributo_tipo": "Desenvoltura",
+    "atributo_valor": 30,
+    "bonus_ids": [],
+    "url": "https://www.wowhead.com/pt/item=243967/encantamento-de-desenvoltura-amani-ferramenta"
+  }
+]

@@ -1,0 +1,694 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-06T09:59:21.086412",
+    "versao_scraper": "2.1.0-season2",
+    "ilvl_min": 305,
+    "ilvl_max": 350,
+    "qualidade_min": 3,
+    "qualidade_craft_min": 5,
+    "total_itens": 8,
+    "total_brutos": 20,
+    "total_brutos_antes_dedupe": 192,
+    "detalhados": 20,
+    "max_detalhes": 20,
+    "ilvl_origem": {
+      "tooltip": 12,
+      "pagina": 8
+    },
+    "descartes": {
+      "ilvl_fora": 12,
+      "ilvl_adiado": 0,
+      "sem_ilvl": 0,
+      "qualidade": 0,
+      "slot": 0,
+      "profissao": 0,
+      "tipo": 0,
+      "qualidade_craft": 0
+    },
+    "categorias": {
+      "Geral": 1
+    },
+    "filtros": {
+      "slots": [],
+      "profissoes": [],
+      "buscar_detalhes": true,
+      "buscar_ingles": true
+    },
+    "avisos_catalogo": [],
+    "arquivo_markdown": "",
+    "tentativas_wait": 41,
+    "retry_scroll_usado": false,
+    "circuit_breaker": {
+      "falhas_consecutivas": 0,
+      "limite": 5,
+      "pausa_segundos": 60.0,
+      "pausas": 0,
+      "pausa_realizada": false,
+      "abortado": false,
+      "motivo": ""
+    },
+    "falhas": []
+  },
+  "itens": [
+    {
+      "id": 252258,
+      "id_completo": "item=252258&bonus=12849&ilvl=318",
+      "nome_en": "Sickening Signet of Atroxus",
+      "nome_ptbr": "Sinete Doentio de Atroxus",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Atroxus",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=252258?bonus=12849&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 318,
+      "track": "Mito",
+      "track_stage": "1/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1830
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1830
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1830
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Aceleração": 253,
+        "Maestria": 116
+      },
+      "atributos_secundarios_ptbr": {
+        "Aceleração": 253,
+        "Maestria": 116
+      },
+      "atributos_secundarios_en": {
+        "Haste": 253,
+        "Mastery": 116
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_devouringhost_ring_bronze2.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12849"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=252258?bonus=12849&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=252258?bonus=12849&crafting-quality=5",
+      "tooltip_raidbots": "Sinete Doentio de Atroxus (ilvl 318)\nAnel\n  +1830 Vigor\n  +253 Rapidez\n  +116 Maestria\nBônus IDs: 12849",
+      "tooltip_raidbots_en": "Sickening Signet of Atroxus (ilvl 318)\nAnel\n  +1830 Stamina\n  +253 Haste\n  +116 Mastery\nBônus IDs: 12849",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 251136,
+      "id_completo": "item=251136&bonus=12849&ilvl=318",
+      "nome_en": "Signet of Snarling Servitude",
+      "nome_ptbr": "Sinete da Servidão Sibilante",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Xathuux, o Aniquilador",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=251136?bonus=12849&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 318,
+      "track": "Mito",
+      "track_stage": "1/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1830
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1830
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1830
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Acerto Crítico": 227,
+        "Maestria": 142
+      },
+      "atributos_secundarios_ptbr": {
+        "Acerto Crítico": 227,
+        "Maestria": 142
+      },
+      "atributos_secundarios_en": {
+        "Critical Strike": 227,
+        "Mastery": 142
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_voidelf_ring_teal.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12849"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=251136?bonus=12849&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=251136?bonus=12849&crafting-quality=5",
+      "tooltip_raidbots": "Sinete da Servidão Sibilante (ilvl 318)\nAnel\n  +1830 Vigor\n  +227 Acerto Crítico\n  +142 Maestria\nBônus IDs: 12849",
+      "tooltip_raidbots_en": "Signet of Snarling Servitude (ilvl 318)\nAnel\n  +1830 Stamina\n  +227 Critical Strike\n  +142 Mastery\nBônus IDs: 12849",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 252258,
+      "id_completo": "item=252258&bonus=12850&ilvl=321",
+      "nome_en": "Sickening Signet of Atroxus",
+      "nome_ptbr": "Sinete Doentio de Atroxus",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Atroxus",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=252258?bonus=12850&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 321,
+      "track": "Mito",
+      "track_stage": "2/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1895
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1895
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1895
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Aceleração": 258,
+        "Maestria": 118
+      },
+      "atributos_secundarios_ptbr": {
+        "Aceleração": 258,
+        "Maestria": 118
+      },
+      "atributos_secundarios_en": {
+        "Haste": 258,
+        "Mastery": 118
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_devouringhost_ring_bronze2.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12850"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=252258?bonus=12850&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=252258?bonus=12850&crafting-quality=5",
+      "tooltip_raidbots": "Sinete Doentio de Atroxus (ilvl 321)\nAnel\n  +1895 Vigor\n  +258 Rapidez\n  +118 Maestria\nBônus IDs: 12850",
+      "tooltip_raidbots_en": "Sickening Signet of Atroxus (ilvl 321)\nAnel\n  +1895 Stamina\n  +258 Haste\n  +118 Mastery\nBônus IDs: 12850",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 251136,
+      "id_completo": "item=251136&bonus=12850&ilvl=321",
+      "nome_en": "Signet of Snarling Servitude",
+      "nome_ptbr": "Sinete da Servidão Sibilante",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Xathuux, o Aniquilador",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=251136?bonus=12850&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 321,
+      "track": "Mito",
+      "track_stage": "2/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1895
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1895
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1895
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Acerto Crítico": 231,
+        "Maestria": 145
+      },
+      "atributos_secundarios_ptbr": {
+        "Acerto Crítico": 231,
+        "Maestria": 145
+      },
+      "atributos_secundarios_en": {
+        "Critical Strike": 231,
+        "Mastery": 145
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_voidelf_ring_teal.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12850"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=251136?bonus=12850&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=251136?bonus=12850&crafting-quality=5",
+      "tooltip_raidbots": "Sinete da Servidão Sibilante (ilvl 321)\nAnel\n  +1895 Vigor\n  +231 Acerto Crítico\n  +145 Maestria\nBônus IDs: 12850",
+      "tooltip_raidbots_en": "Signet of Snarling Servitude (ilvl 321)\nAnel\n  +1895 Stamina\n  +231 Critical Strike\n  +145 Mastery\nBônus IDs: 12850",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 252258,
+      "id_completo": "item=252258&bonus=12851&ilvl=324",
+      "nome_en": "Sickening Signet of Atroxus",
+      "nome_ptbr": "Sinete Doentio de Atroxus",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Atroxus",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=252258?bonus=12851&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 324,
+      "track": "Mito",
+      "track_stage": "3/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1962
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1962
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1962
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Aceleração": 262,
+        "Maestria": 120
+      },
+      "atributos_secundarios_ptbr": {
+        "Aceleração": 262,
+        "Maestria": 120
+      },
+      "atributos_secundarios_en": {
+        "Haste": 262,
+        "Mastery": 120
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_devouringhost_ring_bronze2.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12851"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=252258?bonus=12851&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=252258?bonus=12851&crafting-quality=5",
+      "tooltip_raidbots": "Sinete Doentio de Atroxus (ilvl 324)\nAnel\n  +1962 Vigor\n  +262 Rapidez\n  +120 Maestria\nBônus IDs: 12851",
+      "tooltip_raidbots_en": "Sickening Signet of Atroxus (ilvl 324)\nAnel\n  +1962 Stamina\n  +262 Haste\n  +120 Mastery\nBônus IDs: 12851",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 251136,
+      "id_completo": "item=251136&bonus=12851&ilvl=324",
+      "nome_en": "Signet of Snarling Servitude",
+      "nome_ptbr": "Sinete da Servidão Sibilante",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Xathuux, o Aniquilador",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=251136?bonus=12851&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 324,
+      "track": "Mito",
+      "track_stage": "3/6",
+      "voidforged": false,
+      "atributos_primarios": {
+        "Vigor": 1962
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 1962
+      },
+      "atributos_primarios_en": {
+        "Stamina": 1962
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Acerto Crítico": 235,
+        "Maestria": 148
+      },
+      "atributos_secundarios_ptbr": {
+        "Acerto Crítico": 235,
+        "Maestria": 148
+      },
+      "atributos_secundarios_en": {
+        "Critical Strike": 235,
+        "Mastery": 148
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_voidelf_ring_teal.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12851"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=251136?bonus=12851&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=251136?bonus=12851&crafting-quality=5",
+      "tooltip_raidbots": "Sinete da Servidão Sibilante (ilvl 324)\nAnel\n  +1962 Vigor\n  +235 Acerto Crítico\n  +148 Maestria\nBônus IDs: 12851",
+      "tooltip_raidbots_en": "Signet of Snarling Servitude (ilvl 324)\nAnel\n  +1962 Stamina\n  +235 Critical Strike\n  +148 Mastery\nBônus IDs: 12851",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 252258,
+      "id_completo": "item=252258&bonus=12852&ilvl=328",
+      "nome_en": "Sickening Signet of Atroxus",
+      "nome_ptbr": "Sinete Doentio de Atroxus",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Atroxus",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=252258?bonus=12852&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 328,
+      "track": "Mito",
+      "track_stage": "4/6",
+      "voidforged": true,
+      "atributos_primarios": {
+        "Vigor": 2053
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 2053
+      },
+      "atributos_primarios_en": {
+        "Stamina": 2053
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Aceleração": 269,
+        "Maestria": 123
+      },
+      "atributos_secundarios_ptbr": {
+        "Aceleração": 269,
+        "Maestria": 123
+      },
+      "atributos_secundarios_en": {
+        "Haste": 269,
+        "Mastery": 123
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_devouringhost_ring_bronze2.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12852"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=252258?bonus=12852&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=252258?bonus=12852&crafting-quality=5",
+      "tooltip_raidbots": "Sinete Doentio de Atroxus (ilvl 328)\nAnel\n  +2053 Vigor\n  +269 Rapidez\n  +123 Maestria\nBônus IDs: 12852",
+      "tooltip_raidbots_en": "Sickening Signet of Atroxus (ilvl 328)\nAnel\n  +2053 Stamina\n  +269 Haste\n  +123 Mastery\nBônus IDs: 12852",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    },
+    {
+      "id": 251136,
+      "id_completo": "item=251136&bonus=12852&ilvl=328",
+      "nome_en": "Signet of Snarling Servitude",
+      "nome_ptbr": "Sinete da Servidão Sibilante",
+      "nome_ptbr_fonte": "crawl_ptbr",
+      "nome_en_fonte": "crawl_en",
+      "slot": "Anel",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "Finger",
+      "slot_alvo": "Anel",
+      "tipo_item": "gear",
+      "subtipo": "Anel",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "",
+      "profissao_craft_fonte": "",
+      "craft_indicio": "qualidade_craft:ignorado:sem_profissao (url:crafting-quality)",
+      "qualidade_craft": 0,
+      "qualidade_craft_fonte": "",
+      "motivo_qualidade_craft": "ignorado:sem_profissao (url:crafting-quality)",
+      "embelezamento": false,
+      "missiva_atributo": "",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "Saqueado de: Xathuux, o Aniquilador",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=251136?bonus=12852&crafting-quality=5",
+      "qualidade": 4,
+      "qualidade_nome": "Épico",
+      "qualidade_nome_en": "Epic",
+      "item_level": 328,
+      "track": "Mito",
+      "track_stage": "4/6",
+      "voidforged": true,
+      "atributos_primarios": {
+        "Vigor": 2053
+      },
+      "atributos_fonte": "tooltip_pagina",
+      "atributos_primarios_ptbr": {
+        "Vigor": 2053
+      },
+      "atributos_primarios_en": {
+        "Stamina": 2053
+      },
+      "idioma_atributos_primarios": "ptbr",
+      "atributos_secundarios": {
+        "Acerto Crítico": 241,
+        "Maestria": 151
+      },
+      "atributos_secundarios_ptbr": {
+        "Acerto Crítico": 241,
+        "Maestria": 151
+      },
+      "atributos_secundarios_en": {
+        "Critical Strike": 241,
+        "Mastery": 151
+      },
+      "idioma_atributos_secundarios": "ptbr",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_12_jewelry_voidelf_ring_teal.jpg",
+      "icone_fonte": "pagina",
+      "bonus_ids": [
+        "12852"
+      ],
+      "variante_fonte": "listagem",
+      "url": "https://www.wowhead.com/pt/item=251136?bonus=12852&crafting-quality=5",
+      "url_en": "https://www.wowhead.com/item=251136?bonus=12852&crafting-quality=5",
+      "tooltip_raidbots": "Sinete da Servidão Sibilante (ilvl 328)\nAnel\n  +2053 Vigor\n  +241 Acerto Crítico\n  +151 Maestria\nBônus IDs: 12852",
+      "tooltip_raidbots_en": "Signet of Snarling Servitude (ilvl 328)\nAnel\n  +2053 Stamina\n  +241 Critical Strike\n  +151 Mastery\nBônus IDs: 12852",
+      "categoria": "Geral",
+      "profissao": "",
+      "_variante_fonte": "listagem",
+      "ilvl_origem": "pagina",
+      "ilvl_conflito": false
+    }
+  ]
+}

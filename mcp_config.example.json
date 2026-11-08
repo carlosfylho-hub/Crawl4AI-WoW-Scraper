@@ -1,0 +1,22 @@
+{
+    "_comentario": [
+        "NÃO versione .vscode/mcp.json: o caminho do Python e do projeto varia por máquina.",
+        "Gere os valores reais com: python mcp_server.py --print-config",
+        "O comando acima emite JSON com command/args/cwd/env absolutos.",
+        "Cole a saída dentro de 'mcpServers.crawl4ai-wow' no seu cliente MCP."
+    ],
+    "mcpServers": {
+        "crawl4ai-wow": {
+            "command": "<CAMINHO_DO_PYTHON>",
+            "args": [
+                "<CAMINHO_ABSOLUTO>/mcp_server.py"
+            ],
+            "cwd": "<CAMINHO_ABSOLUTO_DO_PROJETO>",
+            "env": {
+                "PYTHONIOENCODING": "utf-8",
+                "PYTHONPATH": "<CAMINHO_ABSOLUTO_DO_PROJETO>",
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}

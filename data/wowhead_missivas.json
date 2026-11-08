@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-06T06:43:03.670249",
+    "versao_scraper": "2.1.0-season2",
+    "ilvl_min": 305,
+    "ilvl_max": 350,
+    "qualidade_min": 3,
+    "total_itens": 1,
+    "categorias": {
+      "Geral": 1
+    },
+    "filtros": {
+      "slots": [],
+      "profissoes": [],
+      "buscar_detalhes": true,
+      "buscar_ingles": true
+    },
+    "avisos_catalogo": [],
+    "arquivo_markdown": "",
+    "falhas": []
+  },
+  "itens": [
+    {
+      "id": 245815,
+      "id_completo": "item=245815&ilvl=72",
+      "nome_en": "Thalassian Missive of Ingenuity",
+      "nome_ptbr": "Missiva Talassiana da Engenhosidade",
+      "slot": "N/A",
+      "slot_fonte_pt": "",
+      "slot_fonte_en": "",
+      "slot_alvo": "Ferramenta",
+      "tipo_item": "missiva",
+      "subtipo": "",
+      "tipo_armadura": "N/A",
+      "tipo_armadura_fonte_pt": "",
+      "tipo_armadura_fonte_en": "",
+      "profissao_craft": "Escrivania",
+      "embelezamento": false,
+      "missiva_atributo": "Engenhosidade",
+      "missivas_aplicaveis": [],
+      "gema_cor": "",
+      "rank": 0,
+      "fonte": "",
+      "vinculo_conteudo": "",
+      "fonte_consultada": "https://www.wowhead.com/pt/item=245815?ilvl=72",
+      "qualidade": 2,
+      "qualidade_nome": "Incomum",
+      "qualidade_nome_en": "Uncommon",
+      "item_level": 72,
+      "track": "Base",
+      "track_stage": "",
+      "voidforged": false,
+      "atributos_primarios": {},
+      "atributos_primarios_ptbr": {},
+      "atributos_primarios_en": {},
+      "idioma_atributos_primarios": "",
+      "atributos_secundarios": {},
+      "atributos_secundarios_ptbr": {},
+      "atributos_secundarios_en": {},
+      "idioma_atributos_secundarios": "",
+      "efeito_equip_uso": "",
+      "efeito_equip_uso_ptbr": "",
+      "efeito_equip_uso_en": "",
+      "icone_url": "https://wow.zamimg.com/images/wow/icons/large/inv_10_inscription2_repcontracts_80_scroll_uprez.jpg",
+      "bonus_ids": [],
+      "url": "https://www.wowhead.com/pt/item=245815?ilvl=72",
+      "url_en": "https://www.wowhead.com/item=245815?ilvl=72",
+      "categoria": "Geral",
+      "profissao": ""
+    }
+  ]
+}

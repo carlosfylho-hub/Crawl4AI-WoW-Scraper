@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-11-06T08:52:56.397477",
+  "ids_solicitados": [
+    "237831",
+    "237839"
+  ],
+  "qualidade_craft_min": 5,
+  "itens": [
+    {
+      "id": 237831,
+      "nome_ptbr": "Repreensão do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Rebuke",
+      "qualidade": 4,
+      "qualidade_craft": 5,
+      "qualidade_craft_fonte": "url:crafting-quality",
+      "motivo_qualidade_craft": "url:crafting-quality",
+      "profissao_craft": "Ferraria",
+      "profissao_craft_fonte": "texto",
+      "craft_indicio": "profissao:texto; qualidade_craft:url:crafting-quality",
+      "item_level": 246
+    },
+    {
+      "id": 237839,
+      "nome_ptbr": "Lâmina do Quebra-feitiço",
+      "nome_en": "Spellbreaker's Blade",
+      "qualidade": 4,
+      "qualidade_craft": 5,
+      "qualidade_craft_fonte": "url:crafting-quality",
+      "motivo_qualidade_craft": "url:crafting-quality",
+      "profissao_craft": "Ferraria",
+      "profissao_craft_fonte": "texto",
+      "craft_indicio": "profissao:texto; qualidade_craft:url:crafting-quality",
+      "item_level": 246
+    }
+  ],
+  "faltantes": [],
+  "metadata": {
+    "total_itens": 2,
+    "total_brutos": 2,
+    "descartes": {
+      "ilvl_fora": 0,
+      "ilvl_adiado": 2,
+      "sem_ilvl": 0,
+      "qualidade": 0,
+      "slot": 0,
+      "profissao": 0,
+      "tipo": 0,
+      "qualidade_craft": 0
+    },
+    "falhas": []
+  }
+}
